@@ -1,3 +1,1 @@
-github-documents
-including-code
-including-plots
+introductie
