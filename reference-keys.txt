@@ -1,4 +1,4 @@
-introduction
+introductie
 curriculum-vitae
 over-mij
 opleidingen
@@ -10,10 +10,13 @@ data-analyse-vaardigheden
 talen
 plan-voor-de-toekomst
 toekomstbeeld-en-huidig-beeld
-leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling
-introductie-alphafold
-bronnen
-proces
+structurele-eiwitanalyse-met-bio3d
+mijn-eerste-ervaring-met-alphafold
+introductie-bio3d
+planning
+beginning-structure-analysis
+tutorial
+rmsd-en-visualisatie-op-eigen-datasets
 guerrilla-analytics
 daur2
 readme-file
@@ -22,3 +25,11 @@ readme-file-1
 peer-review
 data-analyse-van-c.-elegans-blootstelling
 reproduceerbaarheid-van-wetenschappelijk-onderzoek
+beoordeling-van-onderzoek-op-reproduceerbaarheid
+zelf-de-code-reproduceren
+referentie
+r-package
+projecticum-alternative-splicing-scrna-seq
+ecdc-covid-19-geparametriseerd-rapport
+yaml-header-van-geparametriseerd-covid-19-rapport
+codes-in-geparametriseerd-covid-19-rapport

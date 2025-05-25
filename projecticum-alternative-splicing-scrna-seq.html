@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Data science for Biology - Portfolio Jetske Moot</title>
-  <meta name="description" content="Data science for Biology - Portfolio Jetske Moot" />
+  <title>8 Projecticum alternative splicing scRNA-seq | Data science for Biology - Portfolio Jetske Moot</title>
+  <meta name="description" content="8 Projecticum alternative splicing scRNA-seq | Data science for Biology - Portfolio Jetske Moot" />
   <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Data science for Biology - Portfolio Jetske Moot" />
+  <meta property="og:title" content="8 Projecticum alternative splicing scRNA-seq | Data science for Biology - Portfolio Jetske Moot" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Data science for Biology - Portfolio Jetske Moot" />
+  <meta name="twitter:title" content="8 Projecticum alternative splicing scRNA-seq | Data science for Biology - Portfolio Jetske Moot" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="curriculum-vitae.html"/>
+<link rel="prev" href="r-package.html"/>
+<link rel="next" href="ecdc-covid-19-geparametriseerd-rapport.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -219,16 +219,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Data science for Biology - Portfolio Jetske Moot</h1>
-<p class="author"><em><em>Jetske Moot</em></em></p>
-<p class="date"><em>May, 2025</em></p>
-</div>
-<div id="introductie" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">1</span> Introductie<a href="index.html#introductie" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Welkom bij mijn portfolio voor de cursus Workflows, onderdeel van Data Science for Biology 2. In dit portfolio laat ik zien hoe ik tijdens de cursus heb gewerkt aan reproduceerbare data analyse binnen een biologische context.</p>
-<p>Het bevat voorbeelden van mijn werk en opgedane vaardigheden. De opdrachten zijn uitgewerkt in R Markdown.</p>
-<p>Ik nodig je uit om verder te kijken en een beeld te krijgen van mijn manier van werken.</p>
+<div id="projecticum-alternative-splicing-scrna-seq" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">8</span> Projecticum alternative splicing scRNA-seq<a href="projecticum-alternative-splicing-scrna-seq.html#projecticum-alternative-splicing-scrna-seq" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Alternative splicing is een proces waar axonen van hetzelfde gen worden gecombineerd in verschillende combinaties, maar uiteindelijk leiden tot een ander mRNA transcript. Het proces om exonen selectief te combineren leidt uiteindelijk naar het ontstaan van eiwitten met verschillende functies <span class="citation">[@baralleSplicingCode2018]</span>. Verstoringen in alternatieve splicing zijn in verband gebracht met diverse ziekten, waaronder kanker, neurodegeneratieve aandoeningen en ontwikkelingsstoornissen <span class="citation">[@pengImpactsMechanismsAlternative2022]</span>.</p>
+<p>Single cell RNA sequencing (scRNA-seq) is een technologie die het mogelijk maakt om genexpressie te bestuderen op het niveau van individuele cellen. scRNA-seq meet dus voor het hele transcriptoom de genexpressie van een individuele cel. Hierdoor is het mogelijk om gedetailleerd te kijken naar de functie van de cellen <span class="citation">[@BeginnersGuideBuilding]</span>. Hoewel scRNA-seq voornamelijk wordt gebruikt voor differentiële genexpressie analyse en clustering, biedt het daarnaast een unieke mogelijkheid om alternatieve splicing op enkelcellig niveau te bestuderen.</p>
+<p>In dit project wordt een geautomatiseerde en reproduceerbare workflow ontwikkeld voor het detecteren en analyseren van alternatieve splicing in scRNA-seq data. De workflow maakt gebruik van <code>Seurat</code>, een veelgebruikt R package voor de voorbewerking, normalisatie, visualisatie en clustering van scRNA-seq data <span class="citation">[@ToolsSingleCell]</span>. Na het identificeren van celclusters en genexpressie met <code>Seurat</code> wordt de alternatieve splicing geanalyseerd met behulp van drie gespecialiseerde tools, namelijk <code>Whippet</code>, <code>SUPPA2</code> en <code>BRIE2</code>.</p>
+<p><code>Whippet</code> is een tool voor het analyseren van alternative splicing in RNA-seq data. Het is ontworpen voor snelle en nauwkeurige kwantificatie van splicing events <span class="citation">[@sterne-weilerTimbitzWhippetjl2025]</span>. <code>SUPPA2</code> is ook een tool voor het analyseren van alternative splicing in RNA-seq data. Het maakt gebruik van transcriptkwantificatie om splicing events te identificeren en te vergelijken tussen verschillende biologische condities <span class="citation">[@ComprnaSUPPA2025]</span>. Tenslotte is ook <code>BRIE2</code> specifiek ontwikkeld voor splicing analyse in scRNA-seq data. Het gebruikt een Bayesiaans model om splicing events te koppelen aan celkenmerken zoals celtype of ziekte <span class="citation">[@BRIE2ComputationalIdentification]</span>. Door deze tools met elkaar te vergelijken binnen dezelfde dataset kan worden geëvalueerd welke het meest geschikt is voor het detecteren van splicing.</p>
 
 </div>
             </section>
@@ -236,8 +232,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-
-<a href="curriculum-vitae.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="r-package.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ecdc-covid-19-geparametriseerd-rapport.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

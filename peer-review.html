@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>6 Peer review | Data science for Biology - Portfolio Jetske Moot</title>
   <meta name="description" content="6 Peer review | Data science for Biology - Portfolio Jetske Moot" />
-  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
   <meta property="og:title" content="6 Peer review | Data science for Biology - Portfolio Jetske Moot" />
   <meta property="og:type" content="book" />
@@ -30,7 +30,7 @@
   
   
 <link rel="prev" href="guerrilla-analytics.html"/>
-
+<link rel="next" href="r-package.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,6 +51,16 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="libs/r3dmol-1.6.2/3Dmol-nojquery-min.js"></script>
+<script src="libs/r3dmol-binding-0.1.2/r3dmol.js"></script>
+<script src="libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 
 
 <style type="text/css">
@@ -135,7 +145,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introductie</a></li>
 <li class="chapter" data-level="2" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html"><i class="fa fa-check"></i><b>2</b> Curriculum vitae</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html#over-mij"><i class="fa fa-check"></i><b>2.1</b> Over mij</a></li>
@@ -153,11 +163,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="3.1" data-path="plan-voor-de-toekomst.html"><a href="plan-voor-de-toekomst.html#toekomstbeeld-en-huidig-beeld"><i class="fa fa-check"></i><b>3.1</b> Toekomstbeeld en huidig beeld</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html"><a href="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html"><i class="fa fa-check"></i><b>4</b> Leren van AlphaFold - nauwkeurige eiwitstructuur voorspelling</a>
+<li class="chapter" data-level="4" data-path="structurele-eiwitanalyse-met-bio3d.html"><a href="structurele-eiwitanalyse-met-bio3d.html"><i class="fa fa-check"></i><b>4</b> Structurele eiwitanalyse met Bio3D</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html"><a href="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html#introductie-alphafold"><i class="fa fa-check"></i><b>4.1</b> Introductie AlphaFold</a></li>
-<li class="chapter" data-level="4.2" data-path="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html"><a href="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html#bronnen"><i class="fa fa-check"></i><b>4.2</b> Bronnen</a></li>
-<li class="chapter" data-level="4.3" data-path="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html"><a href="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html#proces"><i class="fa fa-check"></i><b>4.3</b> Proces</a></li>
+<li class="chapter" data-level="4.1" data-path="structurele-eiwitanalyse-met-bio3d.html"><a href="structurele-eiwitanalyse-met-bio3d.html#mijn-eerste-ervaring-met-alphafold"><i class="fa fa-check"></i><b>4.1</b> Mijn eerste ervaring met AlphaFold</a></li>
+<li class="chapter" data-level="4.2" data-path="structurele-eiwitanalyse-met-bio3d.html"><a href="structurele-eiwitanalyse-met-bio3d.html#introductie-bio3d"><i class="fa fa-check"></i><b>4.2</b> Introductie Bio3D</a></li>
+<li class="chapter" data-level="4.3" data-path="structurele-eiwitanalyse-met-bio3d.html"><a href="structurele-eiwitanalyse-met-bio3d.html#planning"><i class="fa fa-check"></i><b>4.3</b> Planning</a></li>
+<li class="chapter" data-level="4.4" data-path="structurele-eiwitanalyse-met-bio3d.html"><a href="structurele-eiwitanalyse-met-bio3d.html#beginning-structure-analysis"><i class="fa fa-check"></i><b>4.4</b> Beginning Structure Analysis</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="structurele-eiwitanalyse-met-bio3d.html"><a href="structurele-eiwitanalyse-met-bio3d.html#tutorial"><i class="fa fa-check"></i><b>4.4.1</b> Tutorial</a></li>
+<li class="chapter" data-level="4.4.2" data-path="structurele-eiwitanalyse-met-bio3d.html"><a href="structurele-eiwitanalyse-met-bio3d.html#rmsd-en-visualisatie-op-eigen-datasets"><i class="fa fa-check"></i><b>4.4.2</b> RMSD en visualisatie op eigen datasets</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="guerrilla-analytics.html"><a href="guerrilla-analytics.html"><i class="fa fa-check"></i><b>5</b> Guerrilla Analytics</a>
 <ul>
@@ -173,7 +188,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6" data-path="peer-review.html"><a href="peer-review.html"><i class="fa fa-check"></i><b>6</b> Peer review</a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="peer-review.html"><a href="peer-review.html#data-analyse-van-c.-elegans-blootstelling"><i class="fa fa-check"></i><b>6.1</b> Data analyse van C. elegans blootstelling</a></li>
-<li class="chapter" data-level="6.2" data-path="peer-review.html"><a href="peer-review.html#reproduceerbaarheid-van-wetenschappelijk-onderzoek"><i class="fa fa-check"></i><b>6.2</b> Reproduceerbaarheid van wetenschappelijk onderzoek:</a></li>
+<li class="chapter" data-level="6.2" data-path="peer-review.html"><a href="peer-review.html#reproduceerbaarheid-van-wetenschappelijk-onderzoek"><i class="fa fa-check"></i><b>6.2</b> Reproduceerbaarheid van wetenschappelijk onderzoek</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="peer-review.html"><a href="peer-review.html#beoordeling-van-onderzoek-op-reproduceerbaarheid"><i class="fa fa-check"></i><b>6.2.1</b> Beoordeling van onderzoek op reproduceerbaarheid</a></li>
+<li class="chapter" data-level="6.2.2" data-path="peer-review.html"><a href="peer-review.html#zelf-de-code-reproduceren"><i class="fa fa-check"></i><b>6.2.2</b> Zelf de code reproduceren</a></li>
+<li class="chapter" data-level="6.2.3" data-path="peer-review.html"><a href="peer-review.html#referentie"><i class="fa fa-check"></i><b>6.2.3</b> Referentie</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="r-package.html"><a href="r-package.html"><i class="fa fa-check"></i><b>7</b> R package</a></li>
+<li class="chapter" data-level="8" data-path="projecticum-alternative-splicing-scrna-seq.html"><a href="projecticum-alternative-splicing-scrna-seq.html"><i class="fa fa-check"></i><b>8</b> Projecticum alternative splicing scRNA-seq</a></li>
+<li class="chapter" data-level="9" data-path="ecdc-covid-19-geparametriseerd-rapport.html"><a href="ecdc-covid-19-geparametriseerd-rapport.html"><i class="fa fa-check"></i><b>9</b> ECDC COVID-19 geparametriseerd rapport</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="ecdc-covid-19-geparametriseerd-rapport.html"><a href="ecdc-covid-19-geparametriseerd-rapport.html#yaml-header-van-geparametriseerd-covid-19-rapport"><i class="fa fa-check"></i><b>9.1</b> YAML header van geparametriseerd COVID-19 rapport</a></li>
+<li class="chapter" data-level="9.2" data-path="ecdc-covid-19-geparametriseerd-rapport.html"><a href="ecdc-covid-19-geparametriseerd-rapport.html#codes-in-geparametriseerd-covid-19-rapport"><i class="fa fa-check"></i><b>9.2</b> Codes in geparametriseerd COVID-19 rapport</a></li>
 </ul></li>
 </ul>
 
@@ -199,73 +226,73 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">6.1</span> Data analyse van C. elegans blootstelling<a href="peer-review.html#data-analyse-van-c.-elegans-blootstelling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Voor deze opdracht was het de bedoeling om de data van een collega laborant te analyseren, afkomstig van het HU lectoraat Innovative Testing in Life Sciences &amp; Chemistry. De data is verkregen door C. elegans bloot te stellen aan verschillende concentraties van diverse chemicaliën. Het doel was om de analyse reproduceerbaar uit te werken in een RMarkdown bestand.</p>
 <p><strong>Inlezen van dataset in R</strong></p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="peer-review.html#cb9-1" tabindex="-1"></a><span class="co"># data inlezen met behulp van readxl package</span></span>
-<span id="cb9-2"><a href="peer-review.html#cb9-2" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="peer-review.html#cb9-3" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb9-4"><a href="peer-review.html#cb9-4" tabindex="-1"></a>data_ce_liq_flow_062 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">&quot;~/dsfb2_2025_jm/dsfb2_workflows_portfolio_jm/raw_data/CE.LIQ.FLOW.062_Tidydata.xlsx&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="peer-review.html#cb43-1" tabindex="-1"></a><span class="co"># data inlezen met behulp van readxl package</span></span>
+<span id="cb43-2"><a href="peer-review.html#cb43-2" tabindex="-1"></a></span>
+<span id="cb43-3"><a href="peer-review.html#cb43-3" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb43-4"><a href="peer-review.html#cb43-4" tabindex="-1"></a>data_ce_liq_flow_062 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">&quot;~/dsfb2_2025_jm/dsfb2_workflows_portfolio_jm/raw_data/CE.LIQ.FLOW.062_Tidydata.xlsx&quot;</span>)</span></code></pre></div>
 <p><strong>Controleren van datatype</strong></p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="peer-review.html#cb10-1" tabindex="-1"></a><span class="co"># controle van datatype en of de data goed is ingelezen</span></span>
-<span id="cb10-2"><a href="peer-review.html#cb10-2" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="peer-review.html#cb10-3" tabindex="-1"></a><span class="fu">typeof</span>(data_ce_liq_flow_062<span class="sc">$</span>RawData) <span class="co"># double</span></span></code></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="peer-review.html#cb44-1" tabindex="-1"></a><span class="co"># controle van datatype en of de data goed is ingelezen</span></span>
+<span id="cb44-2"><a href="peer-review.html#cb44-2" tabindex="-1"></a></span>
+<span id="cb44-3"><a href="peer-review.html#cb44-3" tabindex="-1"></a><span class="fu">typeof</span>(data_ce_liq_flow_062<span class="sc">$</span>RawData) <span class="co"># double</span></span></code></pre></div>
 <pre><code>## [1] &quot;double&quot;</code></pre>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="peer-review.html#cb12-1" tabindex="-1"></a><span class="fu">typeof</span>(data_ce_liq_flow_062<span class="sc">$</span>compName) <span class="co"># character</span></span></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="peer-review.html#cb46-1" tabindex="-1"></a><span class="fu">typeof</span>(data_ce_liq_flow_062<span class="sc">$</span>compName) <span class="co"># character</span></span></code></pre></div>
 <pre><code>## [1] &quot;character&quot;</code></pre>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="peer-review.html#cb14-1" tabindex="-1"></a><span class="fu">typeof</span>(data_ce_liq_flow_062<span class="sc">$</span>compConcentration) <span class="co"># character </span></span></code></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="peer-review.html#cb48-1" tabindex="-1"></a><span class="fu">typeof</span>(data_ce_liq_flow_062<span class="sc">$</span>compConcentration) <span class="co"># character </span></span></code></pre></div>
 <pre><code>## [1] &quot;character&quot;</code></pre>
-<p>De data types zijn als volgt:<br />
-- RawData = double<br />
-- compName = character<br />
-- compConcentration = character</p>
-<p>Op basis van de eerder gegeven informatie over de variabelen van de analyse zou ik de volgende aanpassingen maken:<br />
-- rawData = integer<br />
-- compConcentration = double</p>
+<p>De data types zijn als volgt:</p>
+<pre><code>- RawData = double        
+- compName = character        
+- compConcentration = character       </code></pre>
+<p>Op basis van de eerder gegeven informatie over de variabelen van de analyse zou ik de volgende aanpassingen maken:</p>
+<pre><code>- rawData = integer            
+- compConcentration = double    </code></pre>
 <p>De data is over het algemeen goed ingelezen, maar de datatypen hadden beter ingeladen kunnen worden. rawData en compConcentration hebben namelijk het verkeerde datatype.</p>
 <p><strong>Data type corrigeren</strong></p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="peer-review.html#cb16-1" tabindex="-1"></a><span class="co"># data typen corrigeren </span></span>
-<span id="cb16-2"><a href="peer-review.html#cb16-2" tabindex="-1"></a></span>
-<span id="cb16-3"><a href="peer-review.html#cb16-3" tabindex="-1"></a>data_ce_liq_flow_062<span class="sc">$</span>RawData <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(data_ce_liq_flow_062<span class="sc">$</span>RawData)</span>
-<span id="cb16-4"><a href="peer-review.html#cb16-4" tabindex="-1"></a>data_ce_liq_flow_062<span class="sc">$</span>compConcentration <span class="ot">&lt;-</span> <span class="fu">as.double</span>(data_ce_liq_flow_062<span class="sc">$</span>compConcentration)</span>
-<span id="cb16-5"><a href="peer-review.html#cb16-5" tabindex="-1"></a></span>
-<span id="cb16-6"><a href="peer-review.html#cb16-6" tabindex="-1"></a><span class="co"># controle van datatype</span></span>
-<span id="cb16-7"><a href="peer-review.html#cb16-7" tabindex="-1"></a></span>
-<span id="cb16-8"><a href="peer-review.html#cb16-8" tabindex="-1"></a><span class="fu">typeof</span>(data_ce_liq_flow_062<span class="sc">$</span>RawData) <span class="co"># integer</span></span></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="peer-review.html#cb52-1" tabindex="-1"></a><span class="co"># data typen corrigeren </span></span>
+<span id="cb52-2"><a href="peer-review.html#cb52-2" tabindex="-1"></a></span>
+<span id="cb52-3"><a href="peer-review.html#cb52-3" tabindex="-1"></a>data_ce_liq_flow_062<span class="sc">$</span>RawData <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(data_ce_liq_flow_062<span class="sc">$</span>RawData)</span>
+<span id="cb52-4"><a href="peer-review.html#cb52-4" tabindex="-1"></a>data_ce_liq_flow_062<span class="sc">$</span>compConcentration <span class="ot">&lt;-</span> <span class="fu">as.double</span>(data_ce_liq_flow_062<span class="sc">$</span>compConcentration)</span>
+<span id="cb52-5"><a href="peer-review.html#cb52-5" tabindex="-1"></a></span>
+<span id="cb52-6"><a href="peer-review.html#cb52-6" tabindex="-1"></a><span class="co"># controle van datatype</span></span>
+<span id="cb52-7"><a href="peer-review.html#cb52-7" tabindex="-1"></a></span>
+<span id="cb52-8"><a href="peer-review.html#cb52-8" tabindex="-1"></a><span class="fu">typeof</span>(data_ce_liq_flow_062<span class="sc">$</span>RawData) <span class="co"># integer</span></span></code></pre></div>
 <pre><code>## [1] &quot;integer&quot;</code></pre>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="peer-review.html#cb18-1" tabindex="-1"></a><span class="fu">typeof</span>(data_ce_liq_flow_062<span class="sc">$</span>compConcentration) <span class="co"># double </span></span></code></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="peer-review.html#cb54-1" tabindex="-1"></a><span class="fu">typeof</span>(data_ce_liq_flow_062<span class="sc">$</span>compConcentration) <span class="co"># double </span></span></code></pre></div>
 <pre><code>## [1] &quot;double&quot;</code></pre>
 <p><strong>Scatterplot maken van data</strong></p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="peer-review.html#cb20-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb20-2"><a href="peer-review.html#cb20-2" tabindex="-1"></a></span>
-<span id="cb20-3"><a href="peer-review.html#cb20-3" tabindex="-1"></a><span class="co"># scatterplot maken met de aangeleverde data</span></span>
-<span id="cb20-4"><a href="peer-review.html#cb20-4" tabindex="-1"></a></span>
-<span id="cb20-5"><a href="peer-review.html#cb20-5" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> data_ce_liq_flow_062, <span class="fu">aes</span>(<span class="at">x =</span> compConcentration, <span class="at">y =</span> RawData)) <span class="sc">+</span></span>
-<span id="cb20-6"><a href="peer-review.html#cb20-6" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> compName, <span class="at">shape =</span> expType)) <span class="sc">+</span></span>
-<span id="cb20-7"><a href="peer-review.html#cb20-7" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
-<span id="cb20-8"><a href="peer-review.html#cb20-8" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">alpha =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
-<span id="cb20-9"><a href="peer-review.html#cb20-9" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="peer-review.html#cb56-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb56-2"><a href="peer-review.html#cb56-2" tabindex="-1"></a></span>
+<span id="cb56-3"><a href="peer-review.html#cb56-3" tabindex="-1"></a><span class="co"># scatterplot maken met de aangeleverde data</span></span>
+<span id="cb56-4"><a href="peer-review.html#cb56-4" tabindex="-1"></a></span>
+<span id="cb56-5"><a href="peer-review.html#cb56-5" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> data_ce_liq_flow_062, <span class="fu">aes</span>(<span class="at">x =</span> compConcentration, <span class="at">y =</span> RawData)) <span class="sc">+</span></span>
+<span id="cb56-6"><a href="peer-review.html#cb56-6" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> compName, <span class="at">shape =</span> expType)) <span class="sc">+</span></span>
+<span id="cb56-7"><a href="peer-review.html#cb56-7" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb56-8"><a href="peer-review.html#cb56-8" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">alpha =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb56-9"><a href="peer-review.html#cb56-9" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <p><strong>Scatterplot maken met genormaliseerde data</strong></p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="peer-review.html#cb21-1" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb21-2"><a href="peer-review.html#cb21-2" tabindex="-1"></a></span>
-<span id="cb21-3"><a href="peer-review.html#cb21-3" tabindex="-1"></a><span class="co"># bepalen van gemiddelde van negatieve controle </span></span>
-<span id="cb21-4"><a href="peer-review.html#cb21-4" tabindex="-1"></a></span>
-<span id="cb21-5"><a href="peer-review.html#cb21-5" tabindex="-1"></a>mean_negative <span class="ot">&lt;-</span> <span class="fu">mean</span>(data_ce_liq_flow_062<span class="sc">$</span>RawData[data_ce_liq_flow_062<span class="sc">$</span>expType <span class="sc">==</span> <span class="st">&quot;controlNegative&quot;</span>], <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb21-6"><a href="peer-review.html#cb21-6" tabindex="-1"></a></span>
-<span id="cb21-7"><a href="peer-review.html#cb21-7" tabindex="-1"></a><span class="co"># normaliseren van ruwe data met gemiddelde van negatieve controle</span></span>
-<span id="cb21-8"><a href="peer-review.html#cb21-8" tabindex="-1"></a></span>
-<span id="cb21-9"><a href="peer-review.html#cb21-9" tabindex="-1"></a>normaldata_ce_liq_flow_062 <span class="ot">&lt;-</span> data_ce_liq_flow_062 <span class="sc">|&gt;</span></span>
-<span id="cb21-10"><a href="peer-review.html#cb21-10" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">RawData_normalised =</span> RawData <span class="sc">/</span> mean_negative)</span>
-<span id="cb21-11"><a href="peer-review.html#cb21-11" tabindex="-1"></a></span>
-<span id="cb21-12"><a href="peer-review.html#cb21-12" tabindex="-1"></a><span class="co"># scatterplot maken met de genormaliseerde data</span></span>
-<span id="cb21-13"><a href="peer-review.html#cb21-13" tabindex="-1"></a></span>
-<span id="cb21-14"><a href="peer-review.html#cb21-14" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> normaldata_ce_liq_flow_062, <span class="fu">aes</span>(<span class="at">x =</span> compConcentration, <span class="at">y =</span> RawData_normalised)) <span class="sc">+</span></span>
-<span id="cb21-15"><a href="peer-review.html#cb21-15" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> compName, <span class="at">shape =</span> expType)) <span class="sc">+</span></span>
-<span id="cb21-16"><a href="peer-review.html#cb21-16" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
-<span id="cb21-17"><a href="peer-review.html#cb21-17" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">alpha =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
-<span id="cb21-18"><a href="peer-review.html#cb21-18" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="peer-review.html#cb57-1" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb57-2"><a href="peer-review.html#cb57-2" tabindex="-1"></a></span>
+<span id="cb57-3"><a href="peer-review.html#cb57-3" tabindex="-1"></a><span class="co"># bepalen van gemiddelde van negatieve controle </span></span>
+<span id="cb57-4"><a href="peer-review.html#cb57-4" tabindex="-1"></a></span>
+<span id="cb57-5"><a href="peer-review.html#cb57-5" tabindex="-1"></a>mean_negative <span class="ot">&lt;-</span> <span class="fu">mean</span>(data_ce_liq_flow_062<span class="sc">$</span>RawData[data_ce_liq_flow_062<span class="sc">$</span>expType <span class="sc">==</span> <span class="st">&quot;controlNegative&quot;</span>], <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb57-6"><a href="peer-review.html#cb57-6" tabindex="-1"></a></span>
+<span id="cb57-7"><a href="peer-review.html#cb57-7" tabindex="-1"></a><span class="co"># normaliseren van ruwe data met gemiddelde van negatieve controle</span></span>
+<span id="cb57-8"><a href="peer-review.html#cb57-8" tabindex="-1"></a></span>
+<span id="cb57-9"><a href="peer-review.html#cb57-9" tabindex="-1"></a>normaldata_ce_liq_flow_062 <span class="ot">&lt;-</span> data_ce_liq_flow_062 <span class="sc">|&gt;</span></span>
+<span id="cb57-10"><a href="peer-review.html#cb57-10" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">RawData_normalised =</span> RawData <span class="sc">/</span> mean_negative)</span>
+<span id="cb57-11"><a href="peer-review.html#cb57-11" tabindex="-1"></a></span>
+<span id="cb57-12"><a href="peer-review.html#cb57-12" tabindex="-1"></a><span class="co"># scatterplot maken met de genormaliseerde data</span></span>
+<span id="cb57-13"><a href="peer-review.html#cb57-13" tabindex="-1"></a></span>
+<span id="cb57-14"><a href="peer-review.html#cb57-14" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> normaldata_ce_liq_flow_062, <span class="fu">aes</span>(<span class="at">x =</span> compConcentration, <span class="at">y =</span> RawData_normalised)) <span class="sc">+</span></span>
+<span id="cb57-15"><a href="peer-review.html#cb57-15" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> compName, <span class="at">shape =</span> expType)) <span class="sc">+</span></span>
+<span id="cb57-16"><a href="peer-review.html#cb57-16" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb57-17"><a href="peer-review.html#cb57-17" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">alpha =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb57-18"><a href="peer-review.html#cb57-18" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <p><strong>Analyse reflectie</strong></p>
 <p>Voor de analyse is de data ingelezen, geïnspecteerd en gevisualiseerd met scatterplots waarin de concentratie van het chemicalie en het aantal nakomelingen van C. elegans per chemicalie wordt weergegeven.</p>
-<p>In dit experiment worden verschillende typen controles gebruik:</p>
+<p>In dit experiment worden verschillende typen controles gebruikt:</p>
 <p><em>controlNegative</em>, oftewel de negatieve controle, is gedaan met S-medium. De negatieve controle is een soort referentiepunt voor de achtergrond van het aantal namekomelingen van C. elegans zonder de aanwezigheid van een chemicalie. De negatieve controle wordt gebruikt om niet specifieke reacties en ruis te identificeren. Hiermee kan je de ruwe data mee corrigeren.</p>
 <p><em>controlPositive</em>, oftewel de positieve controle, is gedaan met ethanol. De positieve controle is behandeling waarvan verwacht wordt dat deze een duidelijke, meetbare respons veroorzaakt. Hiermee kan er aangetoond worden dat C. elegans een respons heeft op de behandeling en instaat is om een respons te genereren en functioneert zoals we verwachten op deze controle.</p>
 <p><em>controlVehicle</em>, oftewel de vehicle controle, is ethanol. Dit is hetzelfde oplosmiddel als gebruikt in de experimentele chemicaliën en in de positieve controle. Deze controle controleert de eventuele effecten van het oplosmiddel en kunnen hierdoor worden onderscheiden van de effecten van de experimentele chemicaliën.</p>
@@ -273,87 +300,338 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Door alle meetwaarden uit te drukken als fractie van de gemiddelde negatieve controlewaarde, worden verschillen die veroorzaakt worden door ruis genormaliseerd. Dit zorgt voor een betere en betrouwbaardere data analyse.</p>
 <p>De data is genormaliseerd ten opzichte van de negatieve controle om vergelijkbaarheid tussen condities te verbeteren. Ook hebben we een plan opgesteld voor een dose-response analyse met behulp van het drc package in R.</p>
 <p><strong>Stappenplan voor een dose-response analyse met drc package in R</strong></p>
-<ol style="list-style-type: decimal">
-<li>Installeer en laad drc package.</li>
-</ol>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="peer-review.html#cb22-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;drc&quot;</span>)</span>
-<span id="cb22-2"><a href="peer-review.html#cb22-2" tabindex="-1"></a><span class="fu">library</span>(drc)</span></code></pre></div>
-<ol start="2" style="list-style-type: decimal">
-<li>Lees de data in en inspecteer de dataset.<br />
-</li>
-<li>Voorbereiden van dataset.<br />
-</li>
-<li>Visualiseren van ruwe data.<br />
-</li>
-<li>Kiezen van het model.<br />
-</li>
-</ol>
-<ul>
-<li>Selecteer een geschikt dose-response model, bijvoorbeeld een 4-parameter log-logistisch model.<br />
-</li>
-</ul>
-<ol start="6" style="list-style-type: decimal">
-<li>Model toepassen op de data.<br />
-</li>
-<li>Bepalen van de IC50-waarde.<br />
-</li>
-<li>Visualiseren van de dose-response curve.<br />
-</li>
-<li>Interpreteren van de resultaten.</li>
-</ol>
+<pre><code>1. Installeer en laad drc package.    </code></pre>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="peer-review.html#cb59-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;drc&quot;</span>)</span>
+<span id="cb59-2"><a href="peer-review.html#cb59-2" tabindex="-1"></a><span class="fu">library</span>(drc)</span></code></pre></div>
+<pre><code>2. Lees de data in en inspecteer de dataset.       
+3. Voorbereiden van dataset.      
+4. Visualiseren van ruwe data.     
+5. Kiezen van het model.     
+    - Selecteer een geschikt dose-response model, bijvoorbeeld een 4-parameter log-logistisch model.  
+6. Model toepassen op de data.    
+7. Bepalen van de IC50-waarde.    
+8. Visualiseren van de dose-response curve.     
+9. Interpreteren van de resultaten.   </code></pre>
 </div>
 <div id="reproduceerbaarheid-van-wetenschappelijk-onderzoek" class="section level2 hasAnchor" number="6.2">
-<h2><span class="header-section-number">6.2</span> Reproduceerbaarheid van wetenschappelijk onderzoek:<a href="peer-review.html#reproduceerbaarheid-van-wetenschappelijk-onderzoek" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>In dit onderdeel van mijn portfolio beoordeel ik de reproduceerbaarheid van een wetenschappelijk artikel, waarvan de R code beschikbaar is gesteld.</p>
+<h2><span class="header-section-number">6.2</span> Reproduceerbaarheid van wetenschappelijk onderzoek<a href="peer-review.html#reproduceerbaarheid-van-wetenschappelijk-onderzoek" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In dit onderdeel van mijn portfolio beoordeel ik de reproduceerbaarheid van een zelf gekozen wetenschappelijk artikel, waarvan de R code beschikbaar is gesteld.</p>
 <p><strong>Introductie van onderzoek</strong></p>
-<p><strong>Beoordeling van onderzoek op reproduceerbaarheid</strong></p>
+<p>Het artikel “Proteome-scale prediction of molecular mechanisms underlying dominant genetic diseases” van Badonyi en Marsh (2024) richt zich op het voorspellen van moleculaire mechanismen die ten grondslag liggen aan dominante genetische aandoeningen. Veel van deze aandoeningen worden veroorzaakt door mutaties die handelen via dominante negatieve (DN), gain-of-function (GOF) of loss-of-function (LOF) mechanismen. Het onderscheiden van deze mechanismen is belangrijk voor de ontwikkeling van gerichte therapieën.</p>
+<p>De onderzoekers ontworpen een driedelig statistisch model, bestaande uit support vector machine (SVM) binary classifiers, om te voorspellen of menselijke eiwitcoderende genen geassocieerd worden met DN, GOF of LOF moleculaire ziekten mechanismen. Het model werd getest met behulp van bekende biologische en klinische eigenschappen die aan deze mechanismen zijn gekoppeld. De resultaten tonen aan dat het model goed kan omgaan met onbekende data en nuttige inzichten biedt in de functionele eigenschappen van eiwitten die betrokken zijn bij verschillende ziekteprocessen.</p>
+<p>De onderzoeksvraag van dit onderzoek luidt als volgt:<br />
+- Hoe kunnen SVM binary classifiers worden ingezet om te voorspellen of menselijke eiwitcoderende genen betrokken zijn bij dominant-negatieve (DN), gain-of-function (GOF) of loss-of-function (LOF) moleculaire ziektemechanismen, en welke inzichten bieden deze voorspellingen in de functionele eigenschappen van eiwitten die een rol spelen bij verschillende ziekteprocessen?</p>
+<div id="beoordeling-van-onderzoek-op-reproduceerbaarheid" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Beoordeling van onderzoek op reproduceerbaarheid<a href="peer-review.html#beoordeling-van-onderzoek-op-reproduceerbaarheid" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Aan de hand van de volgende beoordelingscriteria zal ik beoordelen of het onderzoek reproduceerbaar is.</p>
 <table>
+<colgroup>
+<col width="9%" />
+<col width="84%" />
+<col width="6%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th>Criterium</th>
-<th>Beoordeling</th>
+<th><strong>Transparency Criteria</strong></th>
+<th><strong>Definition</strong></th>
+<th><strong>Response</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Study Purpose</td>
-<td>Ja</td>
+<td><em>Study Purpose</em></td>
+<td>A concise statement in the introduction of the article, often in the last paragraph, that establishes the reason the research was conducted. Also called the study objective.</td>
+<td>Yes</td>
 </tr>
 <tr class="even">
-<td>Data Availability</td>
-<td>Ja</td>
+<td><em>Data Availability Statement</em></td>
+<td>A statement, in an individual section offset from the main body of text, that explains how or if one can access a study’s data. The title of the section may vary, but it must explicitly mention data; it is therefore distinct from a supplementary materials section.</td>
+<td>Yes</td>
 </tr>
 <tr class="odd">
-<td>Data Location</td>
-<td>Figshare</td>
+<td><em>Data Location</em></td>
+<td>Where the article’s data can be accessed, either raw or processed.</td>
+<td>Open Science Framework</td>
 </tr>
 <tr class="even">
-<td>Study Location</td>
-<td>VS</td>
+<td><em>Study Location</em></td>
+<td>Author has stated in the methods section where the study took place or the data’s country/region of origin.</td>
+<td>Yes; United Kingdom</td>
 </tr>
 <tr class="odd">
-<td>Author Review</td>
-<td>Instituuts-email</td>
+<td><em>Author Review</em></td>
+<td>The professionalism of the contact information that the author has provided in the manuscript.</td>
+<td>Correspondence address</td>
 </tr>
 <tr class="even">
-<td>Ethics Statement</td>
-<td>Ja</td>
+<td><em>Ethics Statement</em></td>
+<td>A statement within the manuscript indicating any ethical concerns, including the presence of sensitive data.</td>
+<td>Not present</td>
 </tr>
 <tr class="odd">
-<td>Funding Statement</td>
-<td>Ja</td>
+<td><em>Funding Statement</em></td>
+<td>A statement within the manuscript indicating whether or not the authors received funding for their research.</td>
+<td>Yes</td>
 </tr>
 <tr class="even">
-<td>Code Availability</td>
-<td>Ja (GitHub)</td>
+<td><em>Code Availability</em></td>
+<td>Authors have shared access to the most updated code that they used in their study, including code used for analysis.</td>
+<td>Yes (Open Science Framework)</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Zelf de code reproduceren</strong></p>
-<p><em>Bekijk de R code en beschrijf in je eigen woorden wat de R code doet. Beoordeel de leesbaarheid met een cijfer van 1 (= erg slecht) tot 5 (= erg goed).</em></p>
-<p><em>Download de R code en data en maak een nieuw R project aan om de analyse te herhalen. Probeer minstens 1 figuur te reproduceren. Als je hierbij tegen errors aanloopt, probeer die dan te verbeteren en houd die verbeteringen bij. Beoordeel hierna de reproduceerbaarheid van de R code met een cijfer van 1 (= erg slecht) tot 5 (= erg goed).</em></p>
+<p>Aangezien er 7 van de 8 criteria afgevinkt kunnen worden, kan er gesteld worden dat dit onderzoek reproduceerbaar is.</p>
+</div>
+<div id="zelf-de-code-reproduceren" class="section level3 hasAnchor" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Zelf de code reproduceren<a href="peer-review.html#zelf-de-code-reproduceren" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Bekijk de R code en beschrijf in je eigen woorden wat de R code doet. Beoordeel de leesbaarheid met een cijfer van 1 (= erg slecht) tot 5 (= erg goed).</strong></p>
+<p>De code is relatief overzichtelijk, met een duidelijke opbouw per plot. In het begin wordt duidelijk uitgelegd wat de functie van de geschreven functies is, die later over de gehele code gebruikt zullen worden. Er is een goede structuur, maar de headers hadden informatiever kunnen zijn. Op een oogopslag zou ik de R code nu een 4 geven.</p>
+<p><strong>Download de R code en data en maak een nieuw R project aan om de analyse te herhalen. Probeer minstens 1 figuur te reproduceren. Als je hierbij tegen errors aanloopt, probeer die dan te verbeteren en houd die verbeteringen bij. Beoordeel hierna de reproduceerbaarheid van de R code met een cijfer van 1 (= erg slecht) tot 5 (= erg goed).</strong></p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="peer-review.html#cb61-1" tabindex="-1"></a><span class="co"># setup</span></span>
+<span id="cb61-2"><a href="peer-review.html#cb61-2" tabindex="-1"></a></span>
+<span id="cb61-3"><a href="peer-review.html#cb61-3" tabindex="-1"></a><span class="fu">library</span>(rstatix)    <span class="co"># https://rpkgs.datanovia.com/rstatix/</span></span>
+<span id="cb61-4"><a href="peer-review.html#cb61-4" tabindex="-1"></a><span class="fu">library</span>(tidyverse)  <span class="co"># https://www.tidyverse.org/</span></span>
+<span id="cb61-5"><a href="peer-review.html#cb61-5" tabindex="-1"></a><span class="fu">library</span>(tidymodels) <span class="co"># https://www.tidymodels.org/</span></span>
+<span id="cb61-6"><a href="peer-review.html#cb61-6" tabindex="-1"></a><span class="fu">library</span>(scales)     <span class="co"># https://scales.r-lib.org/</span></span>
+<span id="cb61-7"><a href="peer-review.html#cb61-7" tabindex="-1"></a><span class="fu">library</span>(patchwork)  <span class="co"># https://patchwork.data-imaginist.com/</span></span></code></pre></div>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="peer-review.html#cb62-1" tabindex="-1"></a><span class="co"># functies opstellen voor analyse</span></span>
+<span id="cb62-2"><a href="peer-review.html#cb62-2" tabindex="-1"></a></span>
+<span id="cb62-3"><a href="peer-review.html#cb62-3" tabindex="-1"></a>no_zero_trail <span class="ot">&lt;-</span> <span class="cf">function</span>(x) <span class="fu">ifelse</span>(x <span class="sc">==</span> <span class="dv">0</span>, <span class="st">&#39;0&#39;</span>, x)</span>
+<span id="cb62-4"><a href="peer-review.html#cb62-4" tabindex="-1"></a></span>
+<span id="cb62-5"><a href="peer-review.html#cb62-5" tabindex="-1"></a>optimal_threshold <span class="ot">&lt;-</span> <span class="cf">function</span>(base_data) {</span>
+<span id="cb62-6"><a href="peer-review.html#cb62-6" tabindex="-1"></a>  <span class="co"># Determines the optimal threshold from threshold data.</span></span>
+<span id="cb62-7"><a href="peer-review.html#cb62-7" tabindex="-1"></a>  <span class="co"># Custom to this particular project.</span></span>
+<span id="cb62-8"><a href="peer-review.html#cb62-8" tabindex="-1"></a>  <span class="co">#</span></span>
+<span id="cb62-9"><a href="peer-review.html#cb62-9" tabindex="-1"></a>  <span class="co"># Args:</span></span>
+<span id="cb62-10"><a href="peer-review.html#cb62-10" tabindex="-1"></a>  <span class="co">#   base_data (tibble): one of &#39;dn_thresholds&#39;, &#39;gof_thresholds&#39;, or</span></span>
+<span id="cb62-11"><a href="peer-review.html#cb62-11" tabindex="-1"></a>  <span class="co">#   &#39;lof_thresholds&#39;</span></span>
+<span id="cb62-12"><a href="peer-review.html#cb62-12" tabindex="-1"></a>  <span class="co">#</span></span>
+<span id="cb62-13"><a href="peer-review.html#cb62-13" tabindex="-1"></a>  <span class="co"># Returns:</span></span>
+<span id="cb62-14"><a href="peer-review.html#cb62-14" tabindex="-1"></a>  <span class="co">#   A single numeric representing the threshold of lowest distance.</span></span>
+<span id="cb62-15"><a href="peer-review.html#cb62-15" tabindex="-1"></a>  </span>
+<span id="cb62-16"><a href="peer-review.html#cb62-16" tabindex="-1"></a>  base_data <span class="sc">|&gt;</span></span>
+<span id="cb62-17"><a href="peer-review.html#cb62-17" tabindex="-1"></a>    <span class="fu">filter</span>(.metric <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&#39;sensitivity&#39;</span>, <span class="st">&#39;specificity&#39;</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb62-18"><a href="peer-review.html#cb62-18" tabindex="-1"></a>    <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> .metric, <span class="at">values_from =</span> .estimate) <span class="sc">|&gt;</span></span>
+<span id="cb62-19"><a href="peer-review.html#cb62-19" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">distance =</span> <span class="fu">sqrt</span>((<span class="dv">1</span> <span class="sc">-</span> sensitivity) <span class="sc">^</span> <span class="dv">2</span> <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">-</span> specificity) <span class="sc">^</span> <span class="dv">2</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb62-20"><a href="peer-review.html#cb62-20" tabindex="-1"></a>    <span class="fu">arrange</span>(distance) <span class="sc">|&gt;</span></span>
+<span id="cb62-21"><a href="peer-review.html#cb62-21" tabindex="-1"></a>    <span class="fu">slice</span>(<span class="dv">1</span>) <span class="sc">|&gt;</span></span>
+<span id="cb62-22"><a href="peer-review.html#cb62-22" tabindex="-1"></a>    <span class="fu">pull</span>(.threshold)</span>
+<span id="cb62-23"><a href="peer-review.html#cb62-23" tabindex="-1"></a>}</span>
+<span id="cb62-24"><a href="peer-review.html#cb62-24" tabindex="-1"></a></span>
+<span id="cb62-25"><a href="peer-review.html#cb62-25" tabindex="-1"></a>run_estimate <span class="ot">&lt;-</span> <span class="cf">function</span>(base_data, primary, metric_func) {</span>
+<span id="cb62-26"><a href="peer-review.html#cb62-26" tabindex="-1"></a>  <span class="co"># Wrapper for bootstraps() and yardstick threshold-dependent estimators.</span></span>
+<span id="cb62-27"><a href="peer-review.html#cb62-27" tabindex="-1"></a>  <span class="co"># Custom to this particular project.</span></span>
+<span id="cb62-28"><a href="peer-review.html#cb62-28" tabindex="-1"></a>  <span class="co">#</span></span>
+<span id="cb62-29"><a href="peer-review.html#cb62-29" tabindex="-1"></a>  <span class="co"># Args:</span></span>
+<span id="cb62-30"><a href="peer-review.html#cb62-30" tabindex="-1"></a>  <span class="co">#   base_data (tibble): a test data table with columns gene, class, .pred_*</span></span>
+<span id="cb62-31"><a href="peer-review.html#cb62-31" tabindex="-1"></a>  <span class="co">#   primary (character): one of &#39;dn&#39;, &#39;gof&#39;, &#39;lof&#39;</span></span>
+<span id="cb62-32"><a href="peer-review.html#cb62-32" tabindex="-1"></a>  <span class="co">#   metric_func: a yardstick function, such as sensitivity()</span></span>
+<span id="cb62-33"><a href="peer-review.html#cb62-33" tabindex="-1"></a>  <span class="co">#</span></span>
+<span id="cb62-34"><a href="peer-review.html#cb62-34" tabindex="-1"></a>  <span class="co"># Returns:</span></span>
+<span id="cb62-35"><a href="peer-review.html#cb62-35" tabindex="-1"></a>  <span class="co">#   A tibble containing 90% boostrap confidence intervals for the metric.</span></span>
+<span id="cb62-36"><a href="peer-review.html#cb62-36" tabindex="-1"></a>  </span>
+<span id="cb62-37"><a href="peer-review.html#cb62-37" tabindex="-1"></a>  <span class="fu">set.seed</span>(<span class="dv">2024</span>)</span>
+<span id="cb62-38"><a href="peer-review.html#cb62-38" tabindex="-1"></a>  t <span class="ot">&lt;-</span> <span class="fu">filter</span>(thresholds, class <span class="sc">==</span> {{ primary }})<span class="sc">$</span>t</span>
+<span id="cb62-39"><a href="peer-review.html#cb62-39" tabindex="-1"></a>  secondary <span class="ot">&lt;-</span> <span class="fu">case_when</span>(primary <span class="sc">==</span> <span class="st">&#39;dn&#39;</span> <span class="sc">~</span> <span class="st">&#39;lof&#39;</span>,</span>
+<span id="cb62-40"><a href="peer-review.html#cb62-40" tabindex="-1"></a>                         primary <span class="sc">==</span> <span class="st">&#39;gof&#39;</span> <span class="sc">~</span> <span class="st">&#39;lof&#39;</span>,</span>
+<span id="cb62-41"><a href="peer-review.html#cb62-41" tabindex="-1"></a>                         primary <span class="sc">==</span> <span class="st">&#39;lof&#39;</span> <span class="sc">~</span> <span class="st">&#39;non_lof&#39;</span>)</span>
+<span id="cb62-42"><a href="peer-review.html#cb62-42" tabindex="-1"></a>  </span>
+<span id="cb62-43"><a href="peer-review.html#cb62-43" tabindex="-1"></a>  base_data <span class="sc">|&gt;</span></span>
+<span id="cb62-44"><a href="peer-review.html#cb62-44" tabindex="-1"></a>    <span class="fu">rename</span>(<span class="at">.pred_primary =</span> <span class="fu">str_c</span>(<span class="st">&#39;.pred_&#39;</span>, primary)) <span class="sc">|&gt;</span></span>
+<span id="cb62-45"><a href="peer-review.html#cb62-45" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">.pred_class =</span> <span class="fu">if_else</span>(.pred_primary <span class="sc">&gt;</span> t, primary, secondary),</span>
+<span id="cb62-46"><a href="peer-review.html#cb62-46" tabindex="-1"></a>           <span class="at">.pred_class =</span> <span class="fu">factor</span>(.pred_class, <span class="at">levels =</span> <span class="fu">c</span>(primary, secondary))) <span class="sc">|&gt;</span></span>
+<span id="cb62-47"><a href="peer-review.html#cb62-47" tabindex="-1"></a>    <span class="fu">bootstraps</span>(<span class="at">strata =</span> class, <span class="at">times =</span> <span class="dv">1000</span>, <span class="at">apparent =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb62-48"><a href="peer-review.html#cb62-48" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">result =</span> <span class="fu">map</span>(</span>
+<span id="cb62-49"><a href="peer-review.html#cb62-49" tabindex="-1"></a>      splits,</span>
+<span id="cb62-50"><a href="peer-review.html#cb62-50" tabindex="-1"></a>      <span class="at">.progress =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb62-51"><a href="peer-review.html#cb62-51" tabindex="-1"></a>      <span class="at">.f =</span> <span class="cf">function</span>(split, ...) {</span>
+<span id="cb62-52"><a href="peer-review.html#cb62-52" tabindex="-1"></a>        <span class="fu">analysis</span>(split) <span class="sc">|&gt;</span></span>
+<span id="cb62-53"><a href="peer-review.html#cb62-53" tabindex="-1"></a>          <span class="fu">metric_func</span>(class, .pred_class) <span class="sc">|&gt;</span></span>
+<span id="cb62-54"><a href="peer-review.html#cb62-54" tabindex="-1"></a>          <span class="fu">select</span>(<span class="at">term =</span> .metric, <span class="at">estimate =</span> .estimate)</span>
+<span id="cb62-55"><a href="peer-review.html#cb62-55" tabindex="-1"></a>      }</span>
+<span id="cb62-56"><a href="peer-review.html#cb62-56" tabindex="-1"></a>    )) <span class="sc">|&gt;</span></span>
+<span id="cb62-57"><a href="peer-review.html#cb62-57" tabindex="-1"></a>    <span class="fu">int_pctl</span>(<span class="at">statistics =</span> result, <span class="at">alpha =</span> <span class="fl">0.1</span>) <span class="sc">|&gt;</span></span>
+<span id="cb62-58"><a href="peer-review.html#cb62-58" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">class =</span> primary) <span class="sc">|&gt;</span></span>
+<span id="cb62-59"><a href="peer-review.html#cb62-59" tabindex="-1"></a>    <span class="fu">mutate_if</span>(is.double, round, <span class="dv">3</span>)</span>
+<span id="cb62-60"><a href="peer-review.html#cb62-60" tabindex="-1"></a>}</span>
+<span id="cb62-61"><a href="peer-review.html#cb62-61" tabindex="-1"></a></span>
+<span id="cb62-62"><a href="peer-review.html#cb62-62" tabindex="-1"></a></span>
+<span id="cb62-63"><a href="peer-review.html#cb62-63" tabindex="-1"></a>sens50 <span class="ot">&lt;-</span> <span class="cf">function</span>(threshold_data, class) {</span>
+<span id="cb62-64"><a href="peer-review.html#cb62-64" tabindex="-1"></a>  <span class="co"># function to map out threshold at which 50% sensitivity is reached.</span></span>
+<span id="cb62-65"><a href="peer-review.html#cb62-65" tabindex="-1"></a>  <span class="co">#</span></span>
+<span id="cb62-66"><a href="peer-review.html#cb62-66" tabindex="-1"></a>  <span class="co"># args:</span></span>
+<span id="cb62-67"><a href="peer-review.html#cb62-67" tabindex="-1"></a>  <span class="co">#   threshold_data (tibble): a table containing columns .threshold,</span></span>
+<span id="cb62-68"><a href="peer-review.html#cb62-68" tabindex="-1"></a>  <span class="co">#   .metric, .estimator, and .estimate</span></span>
+<span id="cb62-69"><a href="peer-review.html#cb62-69" tabindex="-1"></a>  <span class="co">#   class (character): one of &#39;dn&#39;, &#39;gof&#39;, &#39;lof&#39;</span></span>
+<span id="cb62-70"><a href="peer-review.html#cb62-70" tabindex="-1"></a>  <span class="co">#</span></span>
+<span id="cb62-71"><a href="peer-review.html#cb62-71" tabindex="-1"></a>  <span class="co"># returns:</span></span>
+<span id="cb62-72"><a href="peer-review.html#cb62-72" tabindex="-1"></a>  <span class="co">#   a single-row tibble with the threshold value t (and other metrics).</span></span>
+<span id="cb62-73"><a href="peer-review.html#cb62-73" tabindex="-1"></a>  </span>
+<span id="cb62-74"><a href="peer-review.html#cb62-74" tabindex="-1"></a>  t <span class="ot">&lt;-</span> threshold_data <span class="sc">|&gt;</span></span>
+<span id="cb62-75"><a href="peer-review.html#cb62-75" tabindex="-1"></a>    <span class="fu">filter</span>(.metric <span class="sc">==</span> <span class="st">&#39;sensitivity&#39;</span>, .estimate <span class="sc">&gt;=</span> <span class="fl">0.5</span>) <span class="sc">|&gt;</span></span>
+<span id="cb62-76"><a href="peer-review.html#cb62-76" tabindex="-1"></a>    <span class="fu">filter</span>(.estimate <span class="sc">==</span> <span class="fu">min</span>(.estimate)) <span class="sc">|&gt;</span></span>
+<span id="cb62-77"><a href="peer-review.html#cb62-77" tabindex="-1"></a>    <span class="fu">head</span>(<span class="dv">1</span>) <span class="sc">|&gt;</span></span>
+<span id="cb62-78"><a href="peer-review.html#cb62-78" tabindex="-1"></a>    <span class="fu">pull</span>(.threshold)</span>
+<span id="cb62-79"><a href="peer-review.html#cb62-79" tabindex="-1"></a>  </span>
+<span id="cb62-80"><a href="peer-review.html#cb62-80" tabindex="-1"></a>  threshold_data <span class="sc">|&gt;</span></span>
+<span id="cb62-81"><a href="peer-review.html#cb62-81" tabindex="-1"></a>    <span class="fu">filter</span>(.threshold <span class="sc">==</span> t) <span class="sc">|&gt;</span></span>
+<span id="cb62-82"><a href="peer-review.html#cb62-82" tabindex="-1"></a>    <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> .metric, <span class="at">values_from =</span> .estimate) <span class="sc">|&gt;</span></span>
+<span id="cb62-83"><a href="peer-review.html#cb62-83" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">class =</span> class) <span class="sc">|&gt;</span></span>
+<span id="cb62-84"><a href="peer-review.html#cb62-84" tabindex="-1"></a>    <span class="fu">select</span>(class, <span class="at">t =</span> .threshold, accuracy, specificity, </span>
+<span id="cb62-85"><a href="peer-review.html#cb62-85" tabindex="-1"></a>           sensitivity, npv, ppv, j_index)</span>
+<span id="cb62-86"><a href="peer-review.html#cb62-86" tabindex="-1"></a>}</span>
+<span id="cb62-87"><a href="peer-review.html#cb62-87" tabindex="-1"></a></span>
+<span id="cb62-88"><a href="peer-review.html#cb62-88" tabindex="-1"></a>ci_paster <span class="ot">&lt;-</span> <span class="cf">function</span>(estimate, lower, upper) {</span>
+<span id="cb62-89"><a href="peer-review.html#cb62-89" tabindex="-1"></a>  <span class="co"># Helper to paste confidence intervals.</span></span>
+<span id="cb62-90"><a href="peer-review.html#cb62-90" tabindex="-1"></a>  <span class="co">#</span></span>
+<span id="cb62-91"><a href="peer-review.html#cb62-91" tabindex="-1"></a>  <span class="co"># Args:</span></span>
+<span id="cb62-92"><a href="peer-review.html#cb62-92" tabindex="-1"></a>  <span class="co">#   estimate (numeric): a point estimate</span></span>
+<span id="cb62-93"><a href="peer-review.html#cb62-93" tabindex="-1"></a>  <span class="co">#   lower (numeric): lower confidence interval</span></span>
+<span id="cb62-94"><a href="peer-review.html#cb62-94" tabindex="-1"></a>  <span class="co">#   upper (numeric): upper confidence interval</span></span>
+<span id="cb62-95"><a href="peer-review.html#cb62-95" tabindex="-1"></a>  <span class="co">#</span></span>
+<span id="cb62-96"><a href="peer-review.html#cb62-96" tabindex="-1"></a>  <span class="co"># Returns:</span></span>
+<span id="cb62-97"><a href="peer-review.html#cb62-97" tabindex="-1"></a>  <span class="co">#   A character formatted in this style: &quot;1.0 [0.95, 1.5]&quot;</span></span>
+<span id="cb62-98"><a href="peer-review.html#cb62-98" tabindex="-1"></a>  <span class="fu">str_c</span>(estimate, <span class="st">&#39; [&#39;</span>, lower, <span class="st">&#39;,&#39;</span>, upper, <span class="st">&#39;]&#39;</span>)</span>
+<span id="cb62-99"><a href="peer-review.html#cb62-99" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="peer-review.html#cb63-1" tabindex="-1"></a><span class="co"># test data</span></span>
+<span id="cb63-2"><a href="peer-review.html#cb63-2" tabindex="-1"></a></span>
+<span id="cb63-3"><a href="peer-review.html#cb63-3" tabindex="-1"></a>dn_test <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(<span class="st">&#39;~/dsfb2_2025_jm/dsfb2_workflows_portfolio_jm/repro_opdracht/analysis/test_set/dn_test_pred.tsv&#39;</span>, <span class="at">col_types =</span> <span class="st">&#39;cfnn&#39;</span>)</span>
+<span id="cb63-4"><a href="peer-review.html#cb63-4" tabindex="-1"></a>gof_test <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(<span class="st">&#39;~/dsfb2_2025_jm/dsfb2_workflows_portfolio_jm/repro_opdracht/analysis/test_set/gof_test_pred.tsv&#39;</span>, <span class="at">col_types =</span> <span class="st">&#39;cfnn&#39;</span>)</span>
+<span id="cb63-5"><a href="peer-review.html#cb63-5" tabindex="-1"></a>lof_test <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(<span class="st">&#39;~/dsfb2_2025_jm/dsfb2_workflows_portfolio_jm/repro_opdracht/analysis/test_set/lof_test_pred.tsv&#39;</span>, <span class="at">col_types =</span> <span class="st">&#39;cfnn&#39;</span>)</span>
+<span id="cb63-6"><a href="peer-review.html#cb63-6" tabindex="-1"></a></span>
+<span id="cb63-7"><a href="peer-review.html#cb63-7" tabindex="-1"></a><span class="co"># inlezen van threshold data</span></span>
+<span id="cb63-8"><a href="peer-review.html#cb63-8" tabindex="-1"></a></span>
+<span id="cb63-9"><a href="peer-review.html#cb63-9" tabindex="-1"></a>dn_thresholds <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(<span class="st">&#39;~/dsfb2_2025_jm/dsfb2_workflows_portfolio_jm/repro_opdracht/analysis/thresholds/dn_thresholds.tsv&#39;</span>)</span>
+<span id="cb63-10"><a href="peer-review.html#cb63-10" tabindex="-1"></a>gof_thresholds <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(<span class="st">&#39;~/dsfb2_2025_jm/dsfb2_workflows_portfolio_jm/repro_opdracht/analysis/thresholds/gof_thresholds.tsv&#39;</span>)</span>
+<span id="cb63-11"><a href="peer-review.html#cb63-11" tabindex="-1"></a>lof_thresholds <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(<span class="st">&#39;~/dsfb2_2025_jm/dsfb2_workflows_portfolio_jm/repro_opdracht/analysis/thresholds/lof_thresholds.tsv&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="peer-review.html#cb64-1" tabindex="-1"></a><span class="co"># thresholds at which 50% sensitivity is reached on the test sets</span></span>
+<span id="cb64-2"><a href="peer-review.html#cb64-2" tabindex="-1"></a></span>
+<span id="cb64-3"><a href="peer-review.html#cb64-3" tabindex="-1"></a>thresholds <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(</span>
+<span id="cb64-4"><a href="peer-review.html#cb64-4" tabindex="-1"></a>  <span class="fu">sens50</span>(dn_thresholds, <span class="at">class =</span> <span class="st">&#39;dn&#39;</span>),</span>
+<span id="cb64-5"><a href="peer-review.html#cb64-5" tabindex="-1"></a>  <span class="fu">sens50</span>(gof_thresholds, <span class="at">class =</span> <span class="st">&#39;gof&#39;</span>),</span>
+<span id="cb64-6"><a href="peer-review.html#cb64-6" tabindex="-1"></a>  <span class="fu">sens50</span>(lof_thresholds, <span class="at">class =</span> <span class="st">&#39;lof&#39;</span>)</span>
+<span id="cb64-7"><a href="peer-review.html#cb64-7" tabindex="-1"></a>)</span>
+<span id="cb64-8"><a href="peer-review.html#cb64-8" tabindex="-1"></a></span>
+<span id="cb64-9"><a href="peer-review.html#cb64-9" tabindex="-1"></a><span class="co"># assign thresholds to variables</span></span>
+<span id="cb64-10"><a href="peer-review.html#cb64-10" tabindex="-1"></a></span>
+<span id="cb64-11"><a href="peer-review.html#cb64-11" tabindex="-1"></a>pdn_threshold <span class="ot">&lt;-</span> thresholds<span class="sc">$</span>t[<span class="dv">1</span>]</span>
+<span id="cb64-12"><a href="peer-review.html#cb64-12" tabindex="-1"></a>pgof_threshold <span class="ot">&lt;-</span> thresholds<span class="sc">$</span>t[<span class="dv">2</span>]</span>
+<span id="cb64-13"><a href="peer-review.html#cb64-13" tabindex="-1"></a>plof_threshold <span class="ot">&lt;-</span> thresholds<span class="sc">$</span>t[<span class="dv">3</span>]</span>
+<span id="cb64-14"><a href="peer-review.html#cb64-14" tabindex="-1"></a></span>
+<span id="cb64-15"><a href="peer-review.html#cb64-15" tabindex="-1"></a><span class="co"># run metrics of interest</span></span>
+<span id="cb64-16"><a href="peer-review.html#cb64-16" tabindex="-1"></a></span>
+<span id="cb64-17"><a href="peer-review.html#cb64-17" tabindex="-1"></a>metric_tbl <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(</span>
+<span id="cb64-18"><a href="peer-review.html#cb64-18" tabindex="-1"></a>  <span class="co"># sensitivity</span></span>
+<span id="cb64-19"><a href="peer-review.html#cb64-19" tabindex="-1"></a>  <span class="fu">run_estimate</span>(dn_test, <span class="at">primary =</span> <span class="st">&#39;dn&#39;</span>, sensitivity),</span>
+<span id="cb64-20"><a href="peer-review.html#cb64-20" tabindex="-1"></a>  <span class="fu">run_estimate</span>(gof_test, <span class="at">primary =</span> <span class="st">&#39;gof&#39;</span>, sensitivity),</span>
+<span id="cb64-21"><a href="peer-review.html#cb64-21" tabindex="-1"></a>  <span class="fu">run_estimate</span>(lof_test, <span class="at">primary =</span> <span class="st">&#39;lof&#39;</span>, sensitivity),</span>
+<span id="cb64-22"><a href="peer-review.html#cb64-22" tabindex="-1"></a>  <span class="co"># specificity</span></span>
+<span id="cb64-23"><a href="peer-review.html#cb64-23" tabindex="-1"></a>  <span class="fu">run_estimate</span>(dn_test, <span class="at">primary =</span> <span class="st">&#39;dn&#39;</span>, specificity),</span>
+<span id="cb64-24"><a href="peer-review.html#cb64-24" tabindex="-1"></a>  <span class="fu">run_estimate</span>(gof_test, <span class="at">primary =</span> <span class="st">&#39;gof&#39;</span>, specificity),</span>
+<span id="cb64-25"><a href="peer-review.html#cb64-25" tabindex="-1"></a>  <span class="fu">run_estimate</span>(lof_test, <span class="at">primary =</span> <span class="st">&#39;lof&#39;</span>, specificity),</span>
+<span id="cb64-26"><a href="peer-review.html#cb64-26" tabindex="-1"></a>  <span class="co"># Matthews correlation coefficient</span></span>
+<span id="cb64-27"><a href="peer-review.html#cb64-27" tabindex="-1"></a>  <span class="fu">run_estimate</span>(dn_test, <span class="at">primary =</span> <span class="st">&#39;dn&#39;</span>, mcc),</span>
+<span id="cb64-28"><a href="peer-review.html#cb64-28" tabindex="-1"></a>  <span class="fu">run_estimate</span>(gof_test, <span class="at">primary =</span> <span class="st">&#39;gof&#39;</span>, mcc),</span>
+<span id="cb64-29"><a href="peer-review.html#cb64-29" tabindex="-1"></a>  <span class="fu">run_estimate</span>(lof_test, <span class="at">primary =</span> <span class="st">&#39;lof&#39;</span>, mcc),</span>
+<span id="cb64-30"><a href="peer-review.html#cb64-30" tabindex="-1"></a>  <span class="co"># F1 score</span></span>
+<span id="cb64-31"><a href="peer-review.html#cb64-31" tabindex="-1"></a>  <span class="fu">run_estimate</span>(dn_test, <span class="at">primary =</span> <span class="st">&#39;dn&#39;</span>, f_meas),</span>
+<span id="cb64-32"><a href="peer-review.html#cb64-32" tabindex="-1"></a>  <span class="fu">run_estimate</span>(gof_test, <span class="at">primary =</span> <span class="st">&#39;gof&#39;</span>, f_meas),</span>
+<span id="cb64-33"><a href="peer-review.html#cb64-33" tabindex="-1"></a>  <span class="fu">run_estimate</span>(lof_test, <span class="at">primary =</span> <span class="st">&#39;lof&#39;</span>, f_meas),</span>
+<span id="cb64-34"><a href="peer-review.html#cb64-34" tabindex="-1"></a>  <span class="co"># accuracy</span></span>
+<span id="cb64-35"><a href="peer-review.html#cb64-35" tabindex="-1"></a>  <span class="fu">run_estimate</span>(dn_test, <span class="at">primary =</span> <span class="st">&#39;dn&#39;</span>, accuracy),</span>
+<span id="cb64-36"><a href="peer-review.html#cb64-36" tabindex="-1"></a>  <span class="fu">run_estimate</span>(gof_test, <span class="at">primary =</span> <span class="st">&#39;gof&#39;</span>, accuracy),</span>
+<span id="cb64-37"><a href="peer-review.html#cb64-37" tabindex="-1"></a>  <span class="fu">run_estimate</span>(lof_test, <span class="at">primary =</span> <span class="st">&#39;lof&#39;</span>, accuracy)</span>
+<span id="cb64-38"><a href="peer-review.html#cb64-38" tabindex="-1"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="peer-review.html#cb65-1" tabindex="-1"></a><span class="co"># tabel met data om threshold te plotten </span></span>
+<span id="cb65-2"><a href="peer-review.html#cb65-2" tabindex="-1"></a></span>
+<span id="cb65-3"><a href="peer-review.html#cb65-3" tabindex="-1"></a>metric_tbl <span class="sc">|&gt;</span></span>
+<span id="cb65-4"><a href="peer-review.html#cb65-4" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> term, <span class="at">values_from =</span> <span class="fu">where</span>(is.numeric)) <span class="sc">|&gt;</span></span>
+<span id="cb65-5"><a href="peer-review.html#cb65-5" tabindex="-1"></a>  <span class="fu">transmute</span>(</span>
+<span id="cb65-6"><a href="peer-review.html#cb65-6" tabindex="-1"></a>    <span class="at">class =</span> class,</span>
+<span id="cb65-7"><a href="peer-review.html#cb65-7" tabindex="-1"></a>    <span class="at">sensitivity =</span> <span class="fu">ci_paster</span>(</span>
+<span id="cb65-8"><a href="peer-review.html#cb65-8" tabindex="-1"></a>      .estimate_sensitivity,</span>
+<span id="cb65-9"><a href="peer-review.html#cb65-9" tabindex="-1"></a>      .lower_sensitivity,</span>
+<span id="cb65-10"><a href="peer-review.html#cb65-10" tabindex="-1"></a>      .upper_sensitivity</span>
+<span id="cb65-11"><a href="peer-review.html#cb65-11" tabindex="-1"></a>    ),</span>
+<span id="cb65-12"><a href="peer-review.html#cb65-12" tabindex="-1"></a>    <span class="at">specificity =</span> <span class="fu">ci_paster</span>(</span>
+<span id="cb65-13"><a href="peer-review.html#cb65-13" tabindex="-1"></a>      .estimate_specificity,</span>
+<span id="cb65-14"><a href="peer-review.html#cb65-14" tabindex="-1"></a>      .lower_specificity,</span>
+<span id="cb65-15"><a href="peer-review.html#cb65-15" tabindex="-1"></a>      .upper_specificity</span>
+<span id="cb65-16"><a href="peer-review.html#cb65-16" tabindex="-1"></a>    ),</span>
+<span id="cb65-17"><a href="peer-review.html#cb65-17" tabindex="-1"></a>    <span class="at">accuracy =</span> <span class="fu">ci_paster</span>(.estimate_accuracy, .lower_accuracy, .upper_accuracy),</span>
+<span id="cb65-18"><a href="peer-review.html#cb65-18" tabindex="-1"></a>    <span class="at">mcc =</span> <span class="fu">ci_paster</span>(.estimate_mcc, .lower_mcc, .upper_mcc),</span>
+<span id="cb65-19"><a href="peer-review.html#cb65-19" tabindex="-1"></a>    <span class="at">f1 =</span> <span class="fu">ci_paster</span>(.estimate_f_meas, .lower_f_meas, .upper_f_meas)</span>
+<span id="cb65-20"><a href="peer-review.html#cb65-20" tabindex="-1"></a>  ) </span></code></pre></div>
+<pre><code>## # A tibble: 3 × 6
+##   class sensitivity         specificity         accuracy            mcc    f1   
+##   &lt;chr&gt; &lt;chr&gt;               &lt;chr&gt;               &lt;chr&gt;               &lt;chr&gt;  &lt;chr&gt;
+## 1 dn    0.519 [0.448,0.584] 0.778 [0.717,0.841] 0.642 [0.592,0.693] 0.306… 0.60…
+## 2 gof   0.519 [0.45,0.592]  0.818 [0.759,0.879] 0.666 [0.619,0.712] 0.353… 0.61…
+## 3 lof   0.519 [0.451,0.588] 0.815 [0.764,0.871] 0.66 [0.618,0.703]  0.348… 0.61…</code></pre>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="peer-review.html#cb67-1" tabindex="-1"></a><span class="co"># threshold plots</span></span>
+<span id="cb67-2"><a href="peer-review.html#cb67-2" tabindex="-1"></a></span>
+<span id="cb67-3"><a href="peer-review.html#cb67-3" tabindex="-1"></a>dn_thr <span class="ot">&lt;-</span></span>
+<span id="cb67-4"><a href="peer-review.html#cb67-4" tabindex="-1"></a>  <span class="fu">ggplot</span>(dn_thresholds, <span class="fu">aes</span>(.threshold, .estimate, <span class="at">colour =</span> .metric)) <span class="sc">+</span></span>
+<span id="cb67-5"><a href="peer-review.html#cb67-5" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">0.5</span>, <span class="at">show.legend =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb67-6"><a href="peer-review.html#cb67-6" tabindex="-1"></a>  <span class="fu">scale_colour_viridis_d</span>() <span class="sc">+</span></span>
+<span id="cb67-7"><a href="peer-review.html#cb67-7" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> pdn_threshold, <span class="at">colour =</span> <span class="st">&#39;red&#39;</span>) <span class="sc">+</span></span>
+<span id="cb67-8"><a href="peer-review.html#cb67-8" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="fu">optimal_threshold</span>(dn_thresholds), <span class="at">linetype =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb67-9"><a href="peer-review.html#cb67-9" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> no_zero_trail) <span class="sc">+</span></span>
+<span id="cb67-10"><a href="peer-review.html#cb67-10" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> no_zero_trail) <span class="sc">+</span></span>
+<span id="cb67-11"><a href="peer-review.html#cb67-11" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb67-12"><a href="peer-review.html#cb67-12" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">&#39;top&#39;</span>,</span>
+<span id="cb67-13"><a href="peer-review.html#cb67-13" tabindex="-1"></a>    <span class="at">legend.direction =</span> <span class="st">&#39;horizontal&#39;</span>,</span>
+<span id="cb67-14"><a href="peer-review.html#cb67-14" tabindex="-1"></a>    <span class="at">legend.justification =</span> <span class="st">&#39;left&#39;</span>,</span>
+<span id="cb67-15"><a href="peer-review.html#cb67-15" tabindex="-1"></a>    <span class="at">legend.background =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb67-16"><a href="peer-review.html#cb67-16" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb67-17"><a href="peer-review.html#cb67-17" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;pDN threshold&#39;</span>, <span class="at">y =</span> <span class="st">&#39;Metric estimate&#39;</span>, <span class="at">colour =</span> <span class="cn">NULL</span>)</span>
+<span id="cb67-18"><a href="peer-review.html#cb67-18" tabindex="-1"></a></span>
+<span id="cb67-19"><a href="peer-review.html#cb67-19" tabindex="-1"></a>gof_thr <span class="ot">&lt;-</span></span>
+<span id="cb67-20"><a href="peer-review.html#cb67-20" tabindex="-1"></a>  <span class="fu">ggplot</span>(gof_thresholds, <span class="fu">aes</span>(.threshold, .estimate, <span class="at">colour =</span> .metric)) <span class="sc">+</span></span>
+<span id="cb67-21"><a href="peer-review.html#cb67-21" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">0.5</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb67-22"><a href="peer-review.html#cb67-22" tabindex="-1"></a>  <span class="fu">scale_colour_viridis_d</span>() <span class="sc">+</span></span>
+<span id="cb67-23"><a href="peer-review.html#cb67-23" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> pgof_threshold, <span class="at">colour =</span> <span class="st">&#39;red&#39;</span>) <span class="sc">+</span></span>
+<span id="cb67-24"><a href="peer-review.html#cb67-24" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="fu">optimal_threshold</span>(gof_thresholds), <span class="at">linetype =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb67-25"><a href="peer-review.html#cb67-25" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> no_zero_trail) <span class="sc">+</span></span>
+<span id="cb67-26"><a href="peer-review.html#cb67-26" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> no_zero_trail) <span class="sc">+</span></span>
+<span id="cb67-27"><a href="peer-review.html#cb67-27" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb67-28"><a href="peer-review.html#cb67-28" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">&#39;top&#39;</span>,</span>
+<span id="cb67-29"><a href="peer-review.html#cb67-29" tabindex="-1"></a>    <span class="at">legend.direction =</span> <span class="st">&#39;horizontal&#39;</span>,</span>
+<span id="cb67-30"><a href="peer-review.html#cb67-30" tabindex="-1"></a>    <span class="at">legend.justification =</span> <span class="st">&#39;left&#39;</span>,</span>
+<span id="cb67-31"><a href="peer-review.html#cb67-31" tabindex="-1"></a>    <span class="at">legend.background =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb67-32"><a href="peer-review.html#cb67-32" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb67-33"><a href="peer-review.html#cb67-33" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;pGOF threshold&#39;</span>, <span class="at">y =</span> <span class="st">&#39;Metric estimate&#39;</span>, <span class="at">colour =</span> <span class="cn">NULL</span>)</span>
+<span id="cb67-34"><a href="peer-review.html#cb67-34" tabindex="-1"></a></span>
+<span id="cb67-35"><a href="peer-review.html#cb67-35" tabindex="-1"></a>lof_thr <span class="ot">&lt;-</span></span>
+<span id="cb67-36"><a href="peer-review.html#cb67-36" tabindex="-1"></a>  <span class="fu">ggplot</span>(lof_thresholds, <span class="fu">aes</span>(.threshold, .estimate, <span class="at">colour =</span> .metric)) <span class="sc">+</span></span>
+<span id="cb67-37"><a href="peer-review.html#cb67-37" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">0.5</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb67-38"><a href="peer-review.html#cb67-38" tabindex="-1"></a>  <span class="fu">scale_colour_viridis_d</span>() <span class="sc">+</span></span>
+<span id="cb67-39"><a href="peer-review.html#cb67-39" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> plof_threshold, <span class="at">colour =</span> <span class="st">&#39;red&#39;</span>) <span class="sc">+</span></span>
+<span id="cb67-40"><a href="peer-review.html#cb67-40" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="fu">optimal_threshold</span>(lof_thresholds), <span class="at">linetype =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb67-41"><a href="peer-review.html#cb67-41" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> no_zero_trail) <span class="sc">+</span></span>
+<span id="cb67-42"><a href="peer-review.html#cb67-42" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> no_zero_trail) <span class="sc">+</span></span>
+<span id="cb67-43"><a href="peer-review.html#cb67-43" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb67-44"><a href="peer-review.html#cb67-44" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">&#39;top&#39;</span>,</span>
+<span id="cb67-45"><a href="peer-review.html#cb67-45" tabindex="-1"></a>    <span class="at">legend.direction =</span> <span class="st">&#39;horizontal&#39;</span>,</span>
+<span id="cb67-46"><a href="peer-review.html#cb67-46" tabindex="-1"></a>    <span class="at">legend.justification =</span> <span class="st">&#39;left&#39;</span>,</span>
+<span id="cb67-47"><a href="peer-review.html#cb67-47" tabindex="-1"></a>    <span class="at">legend.background =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb67-48"><a href="peer-review.html#cb67-48" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb67-49"><a href="peer-review.html#cb67-49" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;pLOF threshold&#39;</span>, <span class="at">y =</span> <span class="st">&#39;Metric estimate&#39;</span>, <span class="at">colour =</span> <span class="cn">NULL</span>)</span>
+<span id="cb67-50"><a href="peer-review.html#cb67-50" tabindex="-1"></a></span>
+<span id="cb67-51"><a href="peer-review.html#cb67-51" tabindex="-1"></a>dn_thr <span class="sc">/</span> gof_thr <span class="sc">/</span> lof_thr</span></code></pre></div>
+<p><img src="_main_files/figure-html/threshold%20plotten-1.png" width="480" /></p>
+<p>Allereerst heb ik bij de setup de regel <code>setwd('path_to_OSF_storage/analysis')</code> verwijderd. Er traden veel fouten op bij de pathways, dit kwam doordat de pathways eerst aangepast moesten worden naar mijn eigen paden. Zodra deze correct waren aangepast, ondervond ik geen problemen meer.</p>
+<p>Het was best zoeken naar de data en de functies binnen 1 analyse, in dit geval een threshold analyse. Naar mijn mening zou het handiger zijn om het per analyse te rangschikken, zodat iemand die het script wil reproduceren niet het volledige script hoeft uit te voeren. Het was namelijk behoorlijk lastig om alle benodigde data voor een specifieke analyse te filteren. Daarom lijkt het mij praktischer om per analyse te werken. Daarom lijkt het mij praktischer om per analyse te werken. Dit gebeurt nu al in zekere mate, maar dan zou ik aanraden om verplichte chunks in te stellen die eerst uitgevoerd moeten worden voordat een analyse start.</p>
+<p>De legenda ontbrak, maar is nu aanwezig doordat ik <code>show.legend</code> in <code>geom_line</code> heb aangepast. Hierdoor verschenen echter niet alle lijnen in de legenda. Ik heb geen idee hoe ik dit probleem had kunnen oplossen. Wat dat betreft vond ik het RMarkdown bestand vrij onoverzichtelijk. Voor de volledige reproduceerbaarheid geef ik het bestand een 3.</p>
+</div>
+<div id="referentie" class="section level3 hasAnchor" number="6.2.3">
+<h3><span class="header-section-number">6.2.3</span> Referentie<a href="peer-review.html#referentie" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Artikel</strong><br />
+Badonyi M, Marsh JA (2024) Proteome-scale prediction of molecular mechanisms underlying dominant genetic diseases. PLoS ONE 19(8): e0307312. <a href="https://doi.org/10.1371/journal.pone.0307312" class="uri">https://doi.org/10.1371/journal.pone.0307312</a>.</p>
+<p><strong>OSF</strong><br />
+<a href="https://osf.io/z4dcp/" class="uri">https://osf.io/z4dcp/</a>.</p>
 
-
+</div>
 </div>
 </div>
             </section>
@@ -361,8 +639,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="guerrilla-analytics.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="guerrilla-analytics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="r-package.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -416,6 +694,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

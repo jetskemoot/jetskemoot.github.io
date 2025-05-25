@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>5 Guerrilla Analytics | Data science for Biology - Portfolio Jetske Moot</title>
   <meta name="description" content="5 Guerrilla Analytics | Data science for Biology - Portfolio Jetske Moot" />
-  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
   <meta property="og:title" content="5 Guerrilla Analytics | Data science for Biology - Portfolio Jetske Moot" />
   <meta property="og:type" content="book" />
@@ -29,7 +29,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html"/>
+<link rel="prev" href="structurele-eiwitanalyse-met-bio3d.html"/>
 <link rel="next" href="peer-review.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -51,6 +51,16 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="libs/r3dmol-1.6.2/3Dmol-nojquery-min.js"></script>
+<script src="libs/r3dmol-binding-0.1.2/r3dmol.js"></script>
+<script src="libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 
 
 <style type="text/css">
@@ -135,7 +145,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introductie</a></li>
 <li class="chapter" data-level="2" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html"><i class="fa fa-check"></i><b>2</b> Curriculum vitae</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html#over-mij"><i class="fa fa-check"></i><b>2.1</b> Over mij</a></li>
@@ -153,11 +163,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="3.1" data-path="plan-voor-de-toekomst.html"><a href="plan-voor-de-toekomst.html#toekomstbeeld-en-huidig-beeld"><i class="fa fa-check"></i><b>3.1</b> Toekomstbeeld en huidig beeld</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html"><a href="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html"><i class="fa fa-check"></i><b>4</b> Leren van AlphaFold - nauwkeurige eiwitstructuur voorspelling</a>
+<li class="chapter" data-level="4" data-path="structurele-eiwitanalyse-met-bio3d.html"><a href="structurele-eiwitanalyse-met-bio3d.html"><i class="fa fa-check"></i><b>4</b> Structurele eiwitanalyse met Bio3D</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html"><a href="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html#introductie-alphafold"><i class="fa fa-check"></i><b>4.1</b> Introductie AlphaFold</a></li>
-<li class="chapter" data-level="4.2" data-path="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html"><a href="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html#bronnen"><i class="fa fa-check"></i><b>4.2</b> Bronnen</a></li>
-<li class="chapter" data-level="4.3" data-path="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html"><a href="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html#proces"><i class="fa fa-check"></i><b>4.3</b> Proces</a></li>
+<li class="chapter" data-level="4.1" data-path="structurele-eiwitanalyse-met-bio3d.html"><a href="structurele-eiwitanalyse-met-bio3d.html#mijn-eerste-ervaring-met-alphafold"><i class="fa fa-check"></i><b>4.1</b> Mijn eerste ervaring met AlphaFold</a></li>
+<li class="chapter" data-level="4.2" data-path="structurele-eiwitanalyse-met-bio3d.html"><a href="structurele-eiwitanalyse-met-bio3d.html#introductie-bio3d"><i class="fa fa-check"></i><b>4.2</b> Introductie Bio3D</a></li>
+<li class="chapter" data-level="4.3" data-path="structurele-eiwitanalyse-met-bio3d.html"><a href="structurele-eiwitanalyse-met-bio3d.html#planning"><i class="fa fa-check"></i><b>4.3</b> Planning</a></li>
+<li class="chapter" data-level="4.4" data-path="structurele-eiwitanalyse-met-bio3d.html"><a href="structurele-eiwitanalyse-met-bio3d.html#beginning-structure-analysis"><i class="fa fa-check"></i><b>4.4</b> Beginning Structure Analysis</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="structurele-eiwitanalyse-met-bio3d.html"><a href="structurele-eiwitanalyse-met-bio3d.html#tutorial"><i class="fa fa-check"></i><b>4.4.1</b> Tutorial</a></li>
+<li class="chapter" data-level="4.4.2" data-path="structurele-eiwitanalyse-met-bio3d.html"><a href="structurele-eiwitanalyse-met-bio3d.html#rmsd-en-visualisatie-op-eigen-datasets"><i class="fa fa-check"></i><b>4.4.2</b> RMSD en visualisatie op eigen datasets</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="guerrilla-analytics.html"><a href="guerrilla-analytics.html"><i class="fa fa-check"></i><b>5</b> Guerrilla Analytics</a>
 <ul>
@@ -173,7 +188,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6" data-path="peer-review.html"><a href="peer-review.html"><i class="fa fa-check"></i><b>6</b> Peer review</a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="peer-review.html"><a href="peer-review.html#data-analyse-van-c.-elegans-blootstelling"><i class="fa fa-check"></i><b>6.1</b> Data analyse van C. elegans blootstelling</a></li>
-<li class="chapter" data-level="6.2" data-path="peer-review.html"><a href="peer-review.html#reproduceerbaarheid-van-wetenschappelijk-onderzoek"><i class="fa fa-check"></i><b>6.2</b> Reproduceerbaarheid van wetenschappelijk onderzoek:</a></li>
+<li class="chapter" data-level="6.2" data-path="peer-review.html"><a href="peer-review.html#reproduceerbaarheid-van-wetenschappelijk-onderzoek"><i class="fa fa-check"></i><b>6.2</b> Reproduceerbaarheid van wetenschappelijk onderzoek</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="peer-review.html"><a href="peer-review.html#beoordeling-van-onderzoek-op-reproduceerbaarheid"><i class="fa fa-check"></i><b>6.2.1</b> Beoordeling van onderzoek op reproduceerbaarheid</a></li>
+<li class="chapter" data-level="6.2.2" data-path="peer-review.html"><a href="peer-review.html#zelf-de-code-reproduceren"><i class="fa fa-check"></i><b>6.2.2</b> Zelf de code reproduceren</a></li>
+<li class="chapter" data-level="6.2.3" data-path="peer-review.html"><a href="peer-review.html#referentie"><i class="fa fa-check"></i><b>6.2.3</b> Referentie</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="r-package.html"><a href="r-package.html"><i class="fa fa-check"></i><b>7</b> R package</a></li>
+<li class="chapter" data-level="8" data-path="projecticum-alternative-splicing-scrna-seq.html"><a href="projecticum-alternative-splicing-scrna-seq.html"><i class="fa fa-check"></i><b>8</b> Projecticum alternative splicing scRNA-seq</a></li>
+<li class="chapter" data-level="9" data-path="ecdc-covid-19-geparametriseerd-rapport.html"><a href="ecdc-covid-19-geparametriseerd-rapport.html"><i class="fa fa-check"></i><b>9</b> ECDC COVID-19 geparametriseerd rapport</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="ecdc-covid-19-geparametriseerd-rapport.html"><a href="ecdc-covid-19-geparametriseerd-rapport.html#yaml-header-van-geparametriseerd-covid-19-rapport"><i class="fa fa-check"></i><b>9.1</b> YAML header van geparametriseerd COVID-19 rapport</a></li>
+<li class="chapter" data-level="9.2" data-path="ecdc-covid-19-geparametriseerd-rapport.html"><a href="ecdc-covid-19-geparametriseerd-rapport.html#codes-in-geparametriseerd-covid-19-rapport"><i class="fa fa-check"></i><b>9.2</b> Codes in geparametriseerd COVID-19 rapport</a></li>
 </ul></li>
 </ul>
 
@@ -198,10 +225,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="daur2" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> DAUR2<a href="guerrilla-analytics.html#daur2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Hier laat ik mijn data management zien op de data voor de eindoprdacht van de cursus DAUR2 afkomstig uit Data Science for Biology 1.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="guerrilla-analytics.html#cb1-1" tabindex="-1"></a><span class="fu">library</span>(fs)</span>
-<span id="cb1-2"><a href="guerrilla-analytics.html#cb1-2" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_tree</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;daur2_eindopdracht&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="guerrilla-analytics.html#cb35-1" tabindex="-1"></a><span class="fu">library</span>(fs)</span>
+<span id="cb35-2"><a href="guerrilla-analytics.html#cb35-2" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_tree</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;daur2_eindopdracht&quot;</span>))</span></code></pre></div>
 <pre><code>## /Users/macbook12/dsfb2_2025_jm/dsfb2_workflows_portfolio_jm/daur2_eindopdracht
-## ├── README.txt
+## ├── README.md
 ## ├── data
 ## │   ├── bam
 ## │   │   ├── SRR7866699.bam
@@ -250,7 +277,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="readme-file" class="section level3 hasAnchor" number="5.1.1">
 <h3><span class="header-section-number">5.1.1</span> README file<a href="guerrilla-analytics.html#readme-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Dit is de inhoud van de README file voor de data management voor de eindoprdacht van de cursus DAUR2.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="guerrilla-analytics.html#cb3-1" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">readLines</span>(<span class="st">&quot;daur2_eindopdracht/README.txt&quot;</span>), <span class="at">sep =</span> <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="guerrilla-analytics.html#cb37-1" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">readLines</span>(<span class="st">&quot;daur2_eindopdracht/README.md&quot;</span>), <span class="at">sep =</span> <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
 <pre><code>## *********************
 ## 
 ## PROJECT INFORMATIE
@@ -352,7 +379,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="portfolio" class="section level2 hasAnchor" number="5.2">
 <h2><span class="header-section-number">5.2</span> Portfolio<a href="guerrilla-analytics.html#portfolio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Hier laat ik mijn data management zien op de data van mijn portfolio voor Data Science for Biology 2.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="guerrilla-analytics.html#cb5-1" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_tree</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;../dsfb2_workflows_portfolio_jm&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="guerrilla-analytics.html#cb39-1" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_tree</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;../dsfb2_workflows_portfolio_jm&quot;</span>))</span></code></pre></div>
 <pre><code>## /Users/macbook12/dsfb2_2025_jm/dsfb2_workflows_portfolio_jm/../dsfb2_workflows_portfolio_jm
 ## ├── 01_cv_jm.Rmd
 ## ├── 02_toekomst_jm.Rmd
@@ -360,16 +387,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## ├── 04_guerrilla_analytics.Rmd
 ## ├── 05_reproducible.Rmd
 ## ├── 06_rpackage.Rmd
+## ├── 07_projecticum.Rmd
+## ├── 08_covid19.Rmd
 ## ├── LICENSE
-## ├── README.txt
+## ├── README.md
 ## ├── _book
 ## │   ├── 404.html
 ## │   ├── _main_files
 ## │   │   └── figure-html
+## │   │       ├── threshold plotten-1.png
+## │   │       ├── unnamed-chunk-10-1.png
+## │   │       ├── unnamed-chunk-11-1.png
+## │   │       ├── unnamed-chunk-12-1.png
+## │   │       ├── unnamed-chunk-13-1.png
+## │   │       ├── unnamed-chunk-14-1.png
+## │   │       ├── unnamed-chunk-17-1.png
+## │   │       ├── unnamed-chunk-17-2.png
+## │   │       ├── unnamed-chunk-21-1.png
+## │   │       ├── unnamed-chunk-22-1.png
+## │   │       ├── unnamed-chunk-23-1.png
+## │   │       ├── unnamed-chunk-24-1.png
+## │   │       ├── unnamed-chunk-25-1.png
+## │   │       ├── unnamed-chunk-28-1.png
+## │   │       ├── unnamed-chunk-29-1.png
+## │   │       ├── unnamed-chunk-31-1.png
+## │   │       ├── unnamed-chunk-35-1.png
+## │   │       ├── unnamed-chunk-36-1.png
+## │   │       ├── unnamed-chunk-37-1.png
+## │   │       ├── unnamed-chunk-38-1.png
+## │   │       ├── unnamed-chunk-40-1.png
+## │   │       ├── unnamed-chunk-41-1.png
+## │   │       ├── unnamed-chunk-42-1.png
+## │   │       ├── unnamed-chunk-43-1.png
+## │   │       ├── unnamed-chunk-44-1.png
+## │   │       ├── unnamed-chunk-45-1.png
+## │   │       ├── unnamed-chunk-46-1.png
+## │   │       ├── unnamed-chunk-47-1.png
 ## │   │       ├── unnamed-chunk-8-1.png
 ## │   │       └── unnamed-chunk-9-1.png
 ## │   ├── curriculum-vitae.html
 ## │   ├── cv.html
+## │   ├── ecdc-covid-19-geparametriseerd-rapport.html
 ## │   ├── guerrilla-analytics.html
 ## │   ├── images
 ## │   │   ├── alphafold_example.png
@@ -377,11 +435,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## │   ├── index.html
 ## │   ├── introduction.html
 ## │   ├── leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html
+## │   ├── leren-van-bio3d---structurele-eiwitanalyse.html
 ## │   ├── libs
 ## │   │   ├── anchor-sections-1.1.0
 ## │   │   │   ├── anchor-sections-hash.css
 ## │   │   │   ├── anchor-sections.css
 ## │   │   │   └── anchor-sections.js
+## │   │   ├── crosstalk-1.2.1
+## │   │   │   ├── css
+## │   │   │   │   └── crosstalk.min.css
+## │   │   │   └── js
+## │   │   │       └── crosstalk.min.js
 ## │   │   ├── gitbook-2.6.7
 ## │   │   │   ├── css
 ## │   │   │   │   ├── fontawesome
@@ -402,21 +466,70 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## │   │   │       ├── plugin-fontsettings.js
 ## │   │   │       ├── plugin-search.js
 ## │   │   │       └── plugin-sharing.js
-## │   │   └── jquery-3.6.0
-## │   │       └── jquery-3.6.0.min.js
+## │   │   ├── htmltools-fill-0.5.8.1
+## │   │   │   └── fill.css
+## │   │   ├── htmlwidgets-1.6.4
+## │   │   │   └── htmlwidgets.js
+## │   │   ├── jquery-3.6.0
+## │   │   │   └── jquery-3.6.0.min.js
+## │   │   ├── plotly-binding-4.10.4
+## │   │   │   └── plotly.js
+## │   │   ├── plotly-htmlwidgets-css-2.11.1
+## │   │   │   └── plotly-htmlwidgets.css
+## │   │   ├── plotly-main-2.11.1
+## │   │   │   └── plotly-latest.min.js
+## │   │   ├── r3dmol-1.6.2
+## │   │   │   └── 3Dmol-nojquery-min.js
+## │   │   ├── r3dmol-binding-0.1.2
+## │   │   │   └── r3dmol.js
+## │   │   └── typedarray-0.1
+## │   │       └── typedarray.min.js
 ## │   ├── main.html
 ## │   ├── peer-review.html
 ## │   ├── plan-voor-de-toekomst.html
+## │   ├── projecticum-alternative-splicing-scrna-seq.html
+## │   ├── r-package.html
 ## │   ├── reproducible-science.html
 ## │   ├── search_index.json
+## │   ├── structurele-eiwitanalyse-met-bio3d.html
 ## │   └── vrije-opdracht---titel-nader-te-bepalen.html
+## ├── _bookdown_files
 ## ├── _main.Rmd
 ## ├── _main_files
 ## │   └── figure-html
+## │       ├── threshold plotten-1.png
+## │       ├── unnamed-chunk-10-1.png
+## │       ├── unnamed-chunk-11-1.png
+## │       ├── unnamed-chunk-12-1.png
+## │       ├── unnamed-chunk-13-1.png
+## │       ├── unnamed-chunk-14-1.png
+## │       ├── unnamed-chunk-17-1.png
+## │       ├── unnamed-chunk-17-2.png
+## │       ├── unnamed-chunk-21-1.png
+## │       ├── unnamed-chunk-22-1.png
+## │       ├── unnamed-chunk-23-1.png
+## │       ├── unnamed-chunk-24-1.png
+## │       ├── unnamed-chunk-25-1.png
+## │       ├── unnamed-chunk-28-1.png
+## │       ├── unnamed-chunk-29-1.png
+## │       ├── unnamed-chunk-31-1.png
+## │       ├── unnamed-chunk-35-1.png
+## │       ├── unnamed-chunk-36-1.png
+## │       ├── unnamed-chunk-37-1.png
+## │       ├── unnamed-chunk-38-1.png
+## │       ├── unnamed-chunk-40-1.png
+## │       ├── unnamed-chunk-41-1.png
+## │       ├── unnamed-chunk-42-1.png
+## │       ├── unnamed-chunk-43-1.png
+## │       ├── unnamed-chunk-44-1.png
+## │       ├── unnamed-chunk-45-1.png
+## │       ├── unnamed-chunk-46-1.png
+## │       ├── unnamed-chunk-47-1.png
 ## │       ├── unnamed-chunk-8-1.png
 ## │       └── unnamed-chunk-9-1.png
+## ├── bibliography.json
 ## ├── daur2_eindopdracht
-## │   ├── README.txt
+## │   ├── README.md
 ## │   ├── data
 ## │   │   ├── bam
 ## │   │   │   ├── SRR7866699.bam
@@ -464,15 +577,200 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## │       └── onecut_sampledata_OC3.csv
 ## ├── dsfb2_workflows_portfolio_jm.Rproj
 ## ├── images
-## │   └── alphafold_example.png
 ## ├── index.Rmd
-## └── raw_data
-##     └── CE.LIQ.FLOW.062_Tidydata.xlsx</code></pre>
+## ├── protein_analysis
+## │   ├── 1AGR.pdb
+## │   ├── 1FQJ.pdb
+## │   ├── 1GG2.pdb
+## │   ├── 1KJY.pdb
+## │   ├── 1TAG.pdb
+## │   ├── 1TND.pdb
+## │   ├── 3l9p.pdb
+## │   ├── 4fnx.pdb
+## │   ├── 4obe.pdb
+## │   ├── 4tq9.pdb
+## │   ├── aln.fa
+## │   ├── data
+## │   │   ├── 3l9p_aligned.pdb
+## │   │   ├── 4fnx_aligned.pdb
+## │   │   ├── 4obeA_aligned.pdb
+## │   │   └── 4tq9A_aligned.pdb
+## │   ├── own_protein_analysis.Rmd
+## │   ├── protein_analysis_tutorial.Rmd
+## │   └── split_chain
+## │       ├── 1AGR_A.pdb
+## │       ├── 1FQJ_A.pdb
+## │       ├── 1GG2_A.pdb
+## │       ├── 1KJY_A.pdb
+## │       ├── 1TAG_A.pdb
+## │       ├── 1TND_B.pdb
+## │       ├── 3l9p_A.pdb
+## │       ├── 4fnx_A.pdb
+## │       ├── 4obe_A.pdb
+## │       └── 4tq9_A.pdb
+## ├── raw_data
+## │   └── CE.LIQ.FLOW.062_Tidydata.xlsx
+## └── repro_opdracht
+##     ├── README.txt
+##     ├── analysis
+##     │   ├── analysis_data
+##     │   │   ├── af_edc_clinvar.tsv
+##     │   │   ├── af_foldx_clinvar.tsv.gz
+##     │   │   ├── clinvar_all_uniprot_2023-06-03.tsv.gz
+##     │   │   ├── clinvar_gnomad_veps.tsv.gz
+##     │   │   ├── ddg2p_monoallelic_uniprot.txt
+##     │   │   ├── gene_to_uniprot_2023_02.tsv
+##     │   │   ├── huang_hi_predictions.tsv
+##     │   │   ├── omim_inheritance_2023-05-25.tsv
+##     │   │   ├── shihab_hi_predictions.tsv
+##     │   │   └── steinberg_hi_predictions.tsv
+##     │   ├── model_analysis.Rmd
+##     │   ├── panther
+##     │   │   ├── dn_list.txt
+##     │   │   ├── gof_list.txt
+##     │   │   ├── panther_enrichment_dn.txt
+##     │   │   └── panther_enrichment_gof.txt
+##     │   ├── predictions
+##     │   │   ├── pdn_svm_poly_2023-07-25.tsv
+##     │   │   ├── pgof_svm_poly_2023-07-25.tsv
+##     │   │   └── plof_svm_poly_2023-07-28.tsv
+##     │   ├── test_set
+##     │   │   ├── dn_test_pred.tsv
+##     │   │   ├── gof_test_pred.tsv
+##     │   │   └── lof_test_pred.tsv
+##     │   └── thresholds
+##     │       ├── dn_thresholds.tsv
+##     │       ├── gof_thresholds.tsv
+##     │       └── lof_thresholds.tsv
+##     ├── colab
+##     │   ├── fx
+##     │   │   ├── ddg_ranks.tsv
+##     │   │   ├── up_1.tsv
+##     │   │   ├── up_10.tsv
+##     │   │   ├── up_11.tsv
+##     │   │   ├── up_12.tsv
+##     │   │   ├── up_13.tsv
+##     │   │   ├── up_14.tsv
+##     │   │   ├── up_15.tsv
+##     │   │   ├── up_16.tsv
+##     │   │   ├── up_17.tsv
+##     │   │   ├── up_18.tsv
+##     │   │   ├── up_19.tsv
+##     │   │   ├── up_2.tsv
+##     │   │   ├── up_20.tsv
+##     │   │   ├── up_21.tsv
+##     │   │   ├── up_22.tsv
+##     │   │   ├── up_23.tsv
+##     │   │   ├── up_24.tsv
+##     │   │   ├── up_25.tsv
+##     │   │   ├── up_26.tsv
+##     │   │   ├── up_27.tsv
+##     │   │   ├── up_28.tsv
+##     │   │   ├── up_29.tsv
+##     │   │   ├── up_3.tsv
+##     │   │   ├── up_30.tsv
+##     │   │   ├── up_31.tsv
+##     │   │   ├── up_32.tsv
+##     │   │   ├── up_33.tsv
+##     │   │   ├── up_34.tsv
+##     │   │   ├── up_35.tsv
+##     │   │   ├── up_36.tsv
+##     │   │   ├── up_37.tsv
+##     │   │   ├── up_38.tsv
+##     │   │   ├── up_39.tsv
+##     │   │   ├── up_4.tsv
+##     │   │   ├── up_40.tsv
+##     │   │   ├── up_41.tsv
+##     │   │   ├── up_5.tsv
+##     │   │   ├── up_6.tsv
+##     │   │   ├── up_7.tsv
+##     │   │   ├── up_8.tsv
+##     │   │   └── up_9.tsv
+##     │   ├── logo
+##     │   │   └── hexlogo.png
+##     │   └── mapping
+##     │       ├── handle_pmech.tsv
+##     │       └── reference_set.tsv
+##     ├── models
+##     │   ├── dn_vs_lof_model.Rmd
+##     │   ├── functions.R
+##     │   ├── gof_vs_lof_model.Rmd
+##     │   ├── lof_vs_nonlof_model.Rmd
+##     │   └── model_data
+##     │       ├── dn_imputed_full_frame_prep.tsv
+##     │       ├── dom_class_2023-06.csv
+##     │       ├── gene_to_uniprot_2023_02.tsv
+##     │       ├── gof_imputed_full_frame_prep.tsv
+##     │       ├── lof_imputed_full_frame_prep.tsv
+##     │       ├── protNLM_2023_02.tsv.gz
+##     │       ├── proteome_features.tsv
+##     │       ├── seqmat.clustal
+##     │       └── uniprot_2023_02.fa
+##     └── supplement
+##         ├── table_S1.csv
+##         ├── table_S2.xlsx
+##         └── table_S3.xlsx</code></pre>
 <div id="readme-file-1" class="section level3 hasAnchor" number="5.2.1">
 <h3><span class="header-section-number">5.2.1</span> README file<a href="guerrilla-analytics.html#readme-file-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Dit is de inhoud van de README file voor de data management van dit portfolio.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="guerrilla-analytics.html#cb7-1" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">readLines</span>(<span class="st">&quot;README.txt&quot;</span>), <span class="at">sep =</span> <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
-<pre><code>## hoi even testen</code></pre>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="guerrilla-analytics.html#cb41-1" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">readLines</span>(<span class="st">&quot;README.md&quot;</span>), <span class="at">sep =</span> <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>## # DSFB2 Workflows Portfolio Jetske Moot       
+##           
+##           
+## Welkom in de repository van het DSFB2 Workflows Portfolio van Jetske Moot.       
+## *Hogeschool Utrecht, 2025*     
+##       
+##       
+## ## Inhoud         
+##         
+##         
+## Deze repository bevat een verzameling van de uitwerking van de portfolio opdrachten uitgevoerd tijdens de DSFB2 cursus. Het portfolio bestaat uit diverse R Markdown documenten, analyses, data sets en bijbehorende outputs, gestructureerd in mappen per opdracht of onderwerp.         
+##           
+##           
+## ## Overzicht bestanden en mappen   
+##         
+##         
+## | Bestandsnaam / Map                 | Korte omschrijving                                           |
+## |----------------------------------|----------------------------------------------------------------|
+## | 01_cv_jm.Rmd                     | Curriculum vitae (R Markdown document)                         |
+## | 02_toekomst_jm.Rmd               | Plan voor de toekomst (R Markdown document)                    |
+## | 03_vrije_opdracht_jm.Rmd         | Vrije opdracht (R Markdown document)                           |
+## | 04_guerrilla_analytics.Rmd       | Guerrilla analytics opdracht (R Markdown document)             |
+## | 05_reproducible.Rmd              | Reproduceerbare wetenschap (R Markdown document)               |
+## | 06_rpackage.Rmd                  | Ontwikkeling van een R package (R Markdown document)           |
+## | 07_projecticum.Rmd               | Introductie projecticum opdracht (R Markdown document)         |
+## | 08_covid19.Rmd                   | Documentatie parameterized rapport COVID-19 data (R Mardown document) |
+## | bibliography.json                | Bibliografische referenties                                    |
+## | LICENSE                          | Licentie informatie                                            |
+## | README.md                        | Huidige readme (wat nu wordt gelezen)                          |
+## | dsfb2_workflows_portfolio_jm.Rproj | RStudio project                                              |
+## | index.Rmd                       | Hoofdindex van het project (R Markdown document)                |
+## | raw_data/                       | Map met ruwe data                                               |
+## | images/                         | Map met afbeeldingen                                            |
+## | _book/                          | Gebouwde HTML versie van het project (bookdown output)          |
+## | _bookdown_files/                | Ondersteunende bestanden voor bookdown                          |
+## | _main_files/figure-html/        | Figuurafbeeldingen gebruikt in het project                      |
+## | daur2_eindopdracht/             | Submap met RNA-seq data en analyse                              |
+## | repro_opdracht/                 | Submap met reproduceerbaarheid analyse                          |
+## | protein_analysis                | Submap met code voor eiwitanalyse (vrije opdracht)              |
+##           
+##           
+##            
+## ## Licentie
+##         
+##         
+## Deze repository is gelicenseerd onder de MIT License.       
+##           
+##           
+## ## Contact
+##     
+##     
+## Jetske Moot - GitHub Issues
+## 
+## 
+## ----------------------------------------------------------------------------
+##       
+## Veel plezier met verkennen van mijn portfolio!</code></pre>
 
 </div>
 </div>
@@ -482,7 +780,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="leren-van-alphafold---nauwkeurige-eiwitstructuur-voorspelling.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="structurele-eiwitanalyse-met-bio3d.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="peer-review.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
@@ -537,6 +835,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

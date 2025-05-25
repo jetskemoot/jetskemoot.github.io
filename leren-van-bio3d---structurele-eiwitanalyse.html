@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Leren van Bio3D - Structurele eiwitanalyse | Data science for Biology - Portfolio Jetske Moot</title>
+  <meta name="description" content="4 Leren van Bio3D - Structurele eiwitanalyse | Data science for Biology - Portfolio Jetske Moot" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Leren van Bio3D - Structurele eiwitanalyse | Data science for Biology - Portfolio Jetske Moot" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Leren van Bio3D - Structurele eiwitanalyse | Data science for Biology - Portfolio Jetske Moot" />
+  
+  
+  
+
+<meta name="author" content="Jetske Moot" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="plan-voor-de-toekomst.html"/>
+<link rel="next" href="guerrilla-analytics.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html"><i class="fa fa-check"></i><b>2</b> Curriculum vitae</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html#over-mij"><i class="fa fa-check"></i><b>2.1</b> Over mij</a></li>
+<li class="chapter" data-level="2.2" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html#opleidingen"><i class="fa fa-check"></i><b>2.2</b> Opleidingen</a></li>
+<li class="chapter" data-level="2.3" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html#projecten"><i class="fa fa-check"></i><b>2.3</b> Projecten</a></li>
+<li class="chapter" data-level="2.4" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html#werkervaring"><i class="fa fa-check"></i><b>2.4</b> Werkervaring</a></li>
+<li class="chapter" data-level="2.5" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html#vaardigheden"><i class="fa fa-check"></i><b>2.5</b> Vaardigheden</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html#laboratoriumvaardigheden"><i class="fa fa-check"></i><b>2.5.1</b> Laboratoriumvaardigheden</a></li>
+<li class="chapter" data-level="2.5.2" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html#data-analyse-vaardigheden"><i class="fa fa-check"></i><b>2.5.2</b> Data-analyse vaardigheden</a></li>
+<li class="chapter" data-level="2.5.3" data-path="curriculum-vitae.html"><a href="curriculum-vitae.html#talen"><i class="fa fa-check"></i><b>2.5.3</b> Talen</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="plan-voor-de-toekomst.html"><a href="plan-voor-de-toekomst.html"><i class="fa fa-check"></i><b>3</b> Plan voor de toekomst</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="plan-voor-de-toekomst.html"><a href="plan-voor-de-toekomst.html#toekomstbeeld-en-huidig-beeld"><i class="fa fa-check"></i><b>3.1</b> Toekomstbeeld en huidig beeld</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="leren-van-bio3d---structurele-eiwitanalyse.html"><a href="leren-van-bio3d---structurele-eiwitanalyse.html"><i class="fa fa-check"></i><b>4</b> Leren van Bio3D - Structurele eiwitanalyse</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="leren-van-bio3d---structurele-eiwitanalyse.html"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#mijn-eerste-ervaring-met-alphafold"><i class="fa fa-check"></i><b>4.1</b> Mijn eerste ervaring met AlphaFold</a></li>
+<li class="chapter" data-level="4.2" data-path="leren-van-bio3d---structurele-eiwitanalyse.html"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#introductie-bio3d"><i class="fa fa-check"></i><b>4.2</b> Introductie Bio3D</a></li>
+<li class="chapter" data-level="4.3" data-path="leren-van-bio3d---structurele-eiwitanalyse.html"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#planning"><i class="fa fa-check"></i><b>4.3</b> Planning</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="leren-van-bio3d---structurele-eiwitanalyse.html"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#beginning-structure-analysis-tutorial"><i class="fa fa-check"></i><b>4.3.1</b> Beginning Structure Analysis tutorial</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="leren-van-bio3d---structurele-eiwitanalyse.html"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#bronnen"><i class="fa fa-check"></i><b>4.4</b> Bronnen</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="guerrilla-analytics.html"><a href="guerrilla-analytics.html"><i class="fa fa-check"></i><b>5</b> Guerrilla Analytics</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="guerrilla-analytics.html"><a href="guerrilla-analytics.html#daur2"><i class="fa fa-check"></i><b>5.1</b> DAUR2</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="guerrilla-analytics.html"><a href="guerrilla-analytics.html#readme-file"><i class="fa fa-check"></i><b>5.1.1</b> README file</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="guerrilla-analytics.html"><a href="guerrilla-analytics.html#portfolio"><i class="fa fa-check"></i><b>5.2</b> Portfolio</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="guerrilla-analytics.html"><a href="guerrilla-analytics.html#readme-file-1"><i class="fa fa-check"></i><b>5.2.1</b> README file</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="peer-review.html"><a href="peer-review.html"><i class="fa fa-check"></i><b>6</b> Peer review</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="peer-review.html"><a href="peer-review.html#data-analyse-van-c.-elegans-blootstelling"><i class="fa fa-check"></i><b>6.1</b> Data analyse van C. elegans blootstelling</a></li>
+<li class="chapter" data-level="6.2" data-path="peer-review.html"><a href="peer-review.html#reproduceerbaarheid-van-wetenschappelijk-onderzoek"><i class="fa fa-check"></i><b>6.2</b> Reproduceerbaarheid van wetenschappelijk onderzoek:</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="peer-review.html"><a href="peer-review.html#beoordeling-van-onderzoek-op-reproduceerbaarheid"><i class="fa fa-check"></i><b>6.2.1</b> Beoordeling van onderzoek op reproduceerbaarheid</a></li>
+<li class="chapter" data-level="6.2.2" data-path="peer-review.html"><a href="peer-review.html#zelf-de-code-reproduceren"><i class="fa fa-check"></i><b>6.2.2</b> Zelf de code reproduceren</a></li>
+<li class="chapter" data-level="6.2.3" data-path="peer-review.html"><a href="peer-review.html#referentie"><i class="fa fa-check"></i><b>6.2.3</b> Referentie</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="r-package.html"><a href="r-package.html"><i class="fa fa-check"></i><b>7</b> R package</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data science for Biology - Portfolio Jetske Moot</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="leren-van-bio3d---structurele-eiwitanalyse" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> Leren van Bio3D - Structurele eiwitanalyse<a href="leren-van-bio3d---structurele-eiwitanalyse.html#leren-van-bio3d---structurele-eiwitanalyse" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<center>
+<div class="float">
+<img src="" style="width:30.0%" alt="Voorbeeld van eiwitstructuur voorspeld met AlphaFold (DeepMind, 2025)" />
+<div class="figcaption"><em>Voorbeeld van eiwitstructuur voorspeld met AlphaFold (DeepMind, 2025)</em></div>
+</div>
+</center>
+<p>Voor dit onderdeel van mijn portfolio is 32 uur aan zelfstudietijd beschikbaar gesteld voor het ontwikkelen van een nieuwe, zelfgekozen skill. Deze opdracht biedt de mogelijkheid om je vaardigheden gericht uit te breiden op een manier die aansluit bij je toekomstplannen in het onderzoek. In de onderstaande toelichting leg ik uit welke skill ik heb gekozen en hoe deze aansluit bij mijn toekomstambities.</p>
+<div id="mijn-eerste-ervaring-met-alphafold" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Mijn eerste ervaring met AlphaFold<a href="leren-van-bio3d---structurele-eiwitanalyse.html#mijn-eerste-ervaring-met-alphafold" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>AlphaFold, ontwikkeld door DeepMind, is een baanbrekend artificial intelligence (AI) model dat de driedimensionale (3D) structuur van eiwitten met hoge nauwkeurigheid kan voorspellen op basis van hun aminozuursequentie. Het model leert van vergelijkbare sequentiegegevens uit verschillende organismen. Het combineert kennis over hoe eiwitten zich vouwen op basis van hun chemische eigenschappen. AlphaFold voorspelt hierdoor heel nauwkeurig hoe een eiwit er in 3D uitziet. Dit is een grote doorbraak in de studie van eiwitten.</p>
+<p>Tijdens mijn oriëntatie op structurele eiwitanalyse heb ik geprobeerd AlphaFold lokaal op mijn MacBook te installeren en gebruiken. Dit was best uitdagend, vanwege de grote hoeveelheid benodigde data en de installatie. Ik heb onder andere Linux-gebaseerde installatiescripts moeten aanpassen voor macOS, bash scripts herschreven en verschillende vereiste packages geïnstalleerd. Dit gaf me waardevol inzicht in hoe AlphaFold werkt en welke stappen nodig zijn om zo’n model te gebruiken.</p>
+<p><strong>Waarom heb ik uiteindelijk gekozen voor Bio3D?</strong></p>
+<p>Helaas bleek de volledige installatie van AlphaFold te zwaar voor mijn MacBook, met name vanwege de enorme hoeveelheid data die nodig is voor het gebruik van de AlphaFold database. De opslagbehoefte was niet haalbaar op mijn laptop. Daarom heb ik besloten om in plaats daarvan Bio3D te gebruiken. Dit is een lichtere, maar nog steeds krachtige tool is voor structurele eiwitanalyse. Ook is mogelijk Bio3D te draaien op R via mijn MacBook. Bovendien biedt Bio3D een uitstekende basis om eiwitstructuuranalyse te leren, wat mij in de toekomst beter zal voorbereiden op het werken met meer geavanceerde tools zoals AlphaFold.</p>
+</div>
+<div id="introductie-bio3d" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Introductie Bio3D<a href="leren-van-bio3d---structurele-eiwitanalyse.html#introductie-bio3d" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In mijn toekomstige carrière binnen biomedisch onderzoek is het analyseren en visualiseren van eiwitten en hun structuur essentieel voor het verkrijgen van inzicht in hun functie en interacties. Dit is cruciaal voor het begrijpen van ziektemechanismen en het ontwikkelen van therapieën. De Bio3D package biedt een uitgebreide set met tools voor de structurele analyse van eiwitten. Door deze technieken te beheersen, kan ik inzicht krijgen in de mechanismen waarmee eiwitten functioneren, hoe ze veranderen bij ziekten en hoe ze kunnen worden gemanipuleerd voor therapeutische doeleinden.</p>
+<p>Met Bio3D kan ik de basis van eiwitstructuuranalyse leren, inclusief het vergelijken en alignen van eiwitstructuren. Dit is een cruciale vaardigheid voor het interpreteren van data in biomedisch onderzoek, omdat structurele veranderingen vaak een directe invloed hebben op de functie van een eiwit. Deze kennis kan bijdragen aan een beter begrip van ziektemechanismen, het identificeren van potentiële targets en de ontwikkeling van nieuwe behandelingsstrategieën.</p>
+<p>Voor deze opdracht ga ik specifiek aan de slag met de tutorial “Beginning Structure Analysis”, waarbij ik mij focus op het onderdeel waar de berekening van de Root Mean Sqaure Deviation (RMSD) wordt toegelicht. Na het volgen van dit onderdeel, zal ik de geleerde technieken toepassen op een onbekende dataset. Hierbij vergelijk ik twee eiwitstructuren, waarvan één wildtype en één mutant, op basis van de RMSD. Vervolgens visualiseer en align ik deze structuren met behulp van PyMOL, om zo de structurele verschillen zowel kwantitatief als visueel te kunnen waarnemen.</p>
+<p><strong>RMSD</strong></p>
+<p>De RMSD tussen overeenkomstige atomen van twee eiwitketens is een veelgebruikte maat om de gelijkenis tussen twee eiwitstructuren te bepalen. Hoe kleiner de RMSD waarde, hoe meer de twee structuren op elkaar lijken (Reva, 1998).</p>
+<p>De RMSD waarde in Ångström (Å) wordt berekend met de formule <span class="math inline">\(RMSD = \sqrt{\frac{1}{N} \sum_{i=1}^{N} d_i^2}\)</span>, waarbij <span class="math inline">\(n\)</span> het aantal overeenkomende atomen is en <span class="math inline">\(d_i\)</span> de afstand is tussen het overeenkomstige atoom <span class="math inline">\(i\)</span> van structuur 1 en structuur 2.</p>
+<p>Een RMSD van 0 Å duidt op twee identieke structuren. Een RMSD tussen 0 en 2 Å wijst op kleine structurele verschillen. Waarden tussen 2 en 3 Å wijzen op matige verschillen, die wijzen op veranderingen of functionele impact. Bij een RMSD groter dan 3 Å spreken we van aanzienlijke structurele afwijkingen (Carugo, 2001).</p>
+<p>De uiteindelijke structurele verschillen kunnen visueel worden weergegeven met behulp van PyMOL.</p>
+</div>
+<div id="planning" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Planning<a href="leren-van-bio3d---structurele-eiwitanalyse.html#planning" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="7%" />
+<col width="9%" />
+<col width="72%" />
+<col width="10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Datum</strong></th>
+<th><strong>Fase</strong></th>
+<th><strong>Omschrijving</strong></th>
+<th><strong>Geschatte tijd</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>18-5</em></td>
+<td>Oriëntatie</td>
+<td>Oriëntatie op Bio3D package, installatie van benodigde software (R, Bio3D, XQuartz), inlezen in documentatie en wetenschappelijke literatuur, verwerking in toekomstbeeld en introductie schrijven</td>
+<td>6 uur</td>
+</tr>
+<tr class="even">
+<td><em>19-5</em></td>
+<td>Basisstructuuranalyse</td>
+<td>Stapsgewijs doorlopen van de tutorial “Beginning Structure Analysis” (deel 1), testen van functies op voorbeelddata, inclusief documentatie van resultaten</td>
+<td>6 uur</td>
+</tr>
+<tr class="odd">
+<td><em>20-5</em></td>
+<td>Verdieping &amp; visualisatie</td>
+<td>Vervolg van de tutorial met nadruk op structurele alignments, berekenen van RMSD, en genereren van visualisaties in PyMOL</td>
+<td>6 uur</td>
+</tr>
+<tr class="even">
+<td><em>21-5</em></td>
+<td>Analyse eigen dataset</td>
+<td>Toepassen van geleerde technieken op een wildtype en mutante eiwitstructuur, interpreteren van RMSD resultaten en visualiseren met PyMOL, verslaglegging</td>
+<td>10 uur</td>
+</tr>
+<tr class="odd">
+<td><em>22-5</em></td>
+<td>Controle en afronding</td>
+<td>Controle en verbetering van scripts, nakijken van RMarkdown op leesbaarheid en consistentie, inleveren en reflectie</td>
+<td>4 uur</td>
+</tr>
+<tr class="even">
+<td><strong>Totale Geschatte Tijd</strong></td>
+<td>-</td>
+<td>-</td>
+<td>32 uur</td>
+</tr>
+</tbody>
+</table>
+<div id="beginning-structure-analysis-tutorial" class="section level3 hasAnchor" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Beginning Structure Analysis tutorial<a href="leren-van-bio3d---structurele-eiwitanalyse.html#beginning-structure-analysis-tutorial" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Set up</strong></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb5-1" tabindex="-1"></a><span class="co"># MacOS X installatie</span></span>
+<span id="cb5-2"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb5-2" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb5-3" tabindex="-1"></a><span class="co"># install.packages(&quot;bio3d&quot;, dependencies=TRUE)</span></span>
+<span id="cb5-4"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb5-4" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb5-5" tabindex="-1"></a><span class="fu">library</span>(bio3d)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb6-1" tabindex="-1"></a></span>
+<span id="cb6-2"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb6-2" tabindex="-1"></a><span class="co"># De volgende packages zijn ook nodig voor het gebruik van Bio3D. Voor MacBook wordt aangeraden de volgende packages te installeren via brew.</span></span>
+<span id="cb6-3"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb6-3" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb6-4" tabindex="-1"></a><span class="co"># brew install homebrew/science/muscle</span></span>
+<span id="cb6-5"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb6-5" tabindex="-1"></a><span class="co"># brew install homebrew/science/netcdf</span></span>
+<span id="cb6-6"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb6-6" tabindex="-1"></a><span class="co"># brew install homebrew/science/dssp</span></span>
+<span id="cb6-7"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb6-7" tabindex="-1"></a>  </span>
+<span id="cb6-8"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb6-8" tabindex="-1"></a><span class="co"># Via brew was dit echter voor mijn geen succes. Ik heb ze via conda gedownload. </span></span>
+<span id="cb6-9"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb6-9" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb6-10" tabindex="-1"></a><span class="co"># conda install -c bioconda muscle=3.8.1551</span></span>
+<span id="cb6-11"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb6-11" tabindex="-1"></a><span class="co"># conda install netcdf4</span></span>
+<span id="cb6-12"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb6-12" tabindex="-1"></a><span class="co"># conda install dssp</span></span></code></pre></div>
+<p><strong>RMSD berekening</strong></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb7-1" tabindex="-1"></a><span class="co"># Download some example PDB files</span></span>
+<span id="cb7-2"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb7-2" tabindex="-1"></a>ids <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;1TND_B&quot;</span>,<span class="st">&quot;1AGR_A&quot;</span>,<span class="st">&quot;1FQJ_A&quot;</span>,<span class="st">&quot;1TAG_A&quot;</span>,<span class="st">&quot;1GG2_A&quot;</span>,<span class="st">&quot;1KJY_A&quot;</span>)</span>
+<span id="cb7-3"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb7-3" tabindex="-1"></a>raw.files <span class="ot">&lt;-</span> <span class="fu">get.pdb</span>(ids)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb8-1" tabindex="-1"></a><span class="co"># Extract and align the chains we are interested in</span></span>
+<span id="cb8-2"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb8-2" tabindex="-1"></a>files <span class="ot">&lt;-</span> <span class="fu">pdbsplit</span>(raw.files, ids)</span></code></pre></div>
+<pre><code>##   |                                                                              |                                                                      |   0%  |                                                                              |============                                                          |  17%  |                                                                              |=======================                                               |  33%  |                                                                              |===================================                                   |  50%  |                                                                              |===============================================                       |  67%  |                                                                              |==========================================================            |  83%  |                                                                              |======================================================================| 100%</code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb10-1" tabindex="-1"></a>pdbs <span class="ot">&lt;-</span> <span class="fu">pdbaln</span>(files)</span></code></pre></div>
+<pre><code>## Reading PDB files:
+## split_chain/1TND_B.pdb
+## split_chain/1AGR_A.pdb
+## split_chain/1FQJ_A.pdb
+## split_chain/1TAG_A.pdb
+## split_chain/1GG2_A.pdb
+## split_chain/1KJY_A.pdb
+## ......
+## 
+## Extracting sequences
+## 
+## pdb/seq: 1   name: split_chain/1TND_B.pdb 
+## pdb/seq: 2   name: split_chain/1AGR_A.pdb 
+## pdb/seq: 3   name: split_chain/1FQJ_A.pdb 
+## pdb/seq: 4   name: split_chain/1TAG_A.pdb 
+## pdb/seq: 5   name: split_chain/1GG2_A.pdb 
+## pdb/seq: 6   name: split_chain/1KJY_A.pdb</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb12-1" tabindex="-1"></a><span class="co"># Calculate sequence identity</span></span>
+<span id="cb12-2"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb12-2" tabindex="-1"></a>pdbs<span class="sc">$</span>id <span class="ot">&lt;-</span> <span class="fu">basename.pdb</span>(pdbs<span class="sc">$</span>id)</span>
+<span id="cb12-3"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb12-3" tabindex="-1"></a><span class="fu">seqidentity</span>(pdbs)</span></code></pre></div>
+<pre><code>##        1TND_B 1AGR_A 1FQJ_A 1TAG_A 1GG2_A 1KJY_A
+## 1TND_B  1.000  0.693  0.914  1.000  0.690  0.696
+## 1AGR_A  0.693  1.000  0.779  0.694  0.997  0.994
+## 1FQJ_A  0.914  0.779  1.000  0.914  0.776  0.782
+## 1TAG_A  1.000  0.694  0.914  1.000  0.691  0.697
+## 1GG2_A  0.690  0.997  0.776  0.691  1.000  0.991
+## 1KJY_A  0.696  0.994  0.782  0.697  0.991  1.000</code></pre>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb14-1" tabindex="-1"></a><span class="do">## Calculate RMSD</span></span>
+<span id="cb14-2"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb14-2" tabindex="-1"></a>rmsd <span class="ot">&lt;-</span> <span class="fu">rmsd</span>(pdbs, <span class="at">fit=</span><span class="cn">TRUE</span>)</span>
+<span id="cb14-3"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb14-3" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb14-4" tabindex="-1"></a>  <span class="co"># fit=TRUE: je meet alleen structurele verschillen. De ene structuur wordt eerst ruimtelijk uitgelijnd (superposed) op de andere. De rotatie- en translatieverschillen worden weggehaald, zodat alleen de interne structurele verschillen overblijven.</span></span>
+<span id="cb14-5"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb14-5" tabindex="-1"></a>  <span class="co"># fit=FALSE: zonder uitlijning (fit=FALSE) zou een klein verschil in positionering al tot een hoge RMSD leiden.</span></span></code></pre></div>
+<p><em>Principal Component Analysis (PCA)</em></p>
+<p>PC1 (47.41%), PC2 (25.98%), en PC3 (19.07%) verklaren samen ongeveer 92.5% van de totale structurele variatie (zie de plot rechtsonder). Dit betekent dat met alleen PC1 tot en met PC3 vrijwel alle belangrijke verschillen tussen de eiwitstructuren verklaard kunnen worden. Hoe verder twee punten van elkaar af liggen, hoe meer de structuren van elkaar verschillen op basis van de posities van de overeenkomstige atomen. Als een mutant en wildtype ver uit elkaar liggen, wijst dat op een grote structurele verandering.</p>
+<p>De kleur van de punten in de PCA plot gaan op basis van volgorde hoe je de eiwit PDB’s inleest, dus:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Structuur</th>
+<th>Kleur in plot</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1TND_B</td>
+<td>Zwart</td>
+</tr>
+<tr class="even">
+<td>1AGR_A</td>
+<td>Rood</td>
+</tr>
+<tr class="odd">
+<td>1FQJ_A</td>
+<td>Groen</td>
+</tr>
+<tr class="even">
+<td>1TAG_A</td>
+<td>Blauw</td>
+</tr>
+<tr class="odd">
+<td>1GG2_A</td>
+<td>Cyan</td>
+</tr>
+<tr class="even">
+<td>1KJY_A</td>
+<td>Paars</td>
+</tr>
+</tbody>
+</table>
+<p>De eiwitten 1TND_B, 1AGR_A, en 1FQJ_A lijken sterk op elkaar, gezien hun clustering. 1KJY_A en 1GG2_A wijken hier sterk van af. PCA maakt duidelijk welke structuren functioneel gelijk zijn, zonder meteen alle individuele RMSD waarden te hoeven bekijken.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb15-1" tabindex="-1"></a><span class="do">## Quick PCA </span></span>
+<span id="cb15-2"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb15-2" tabindex="-1"></a>pc <span class="ot">&lt;-</span> <span class="fu">pca</span>(<span class="fu">pdbfit</span>(pdbs), <span class="at">rm.gaps=</span><span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## NOTE: Removing 37 gap positions with missing coordinate data
+##       retaining 313 non-gap positions for analysis.</code></pre>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb17-1" tabindex="-1"></a><span class="fu">plot</span>(pc, <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&quot;black&quot;</span>, <span class="st">&quot;red&quot;</span>, <span class="st">&quot;green&quot;</span>, <span class="st">&quot;blue&quot;</span>, <span class="st">&quot;cyan&quot;</span>, <span class="st">&quot;purple&quot;</span>))</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<p><em>Normal Mode Analysis</em></p>
+<p>NMA is een belangrijke analyse die wordt gebruikt om bewegingen in biomoleculen te onderzoeken. Het is een snelle en relatief eenvoudige methode om trillingsmodi en de flexibiliteit van eiwitten te berekenen. NMA, ook wel eigenwaarde-analyse genoemd, is een techniek die de trillingsvormen en bijbehorende frequenties van een structuur berekent. Kortom, het is een computationele benadering om de flexibiliteit van eiwitten te bestuderen en te karakteriseren.</p>
+<p>Een NMA plot helpt om visueel te identificeren welke delen van een eiwit het meest dynamisch zijn en welke meer rigide. Op de x-as staat het residu nummer, dat is de volgorde van aminozuren in het eiwit. Op de y-as staat de RMS fluctaties. De pieken, oftewel hoge RMS fluctaties, geven aan dat de atomen zeer flexibel zijn en grote verplaatsingen kunnen ondergaan in de gesimuleerde normale mode. Dit zijn vaak de mobiele of minder stabiele regio’s van het eiwit.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb18-1" tabindex="-1"></a><span class="do">## Quick NMA of all structures </span></span>
+<span id="cb18-2"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb18-2" tabindex="-1"></a>modes <span class="ot">&lt;-</span> <span class="fu">nma</span>(pdbs)</span></code></pre></div>
+<pre><code>## 
+## Details of Scheduled Calculation:
+##   ... 6 input structures 
+##   ... storing 933 eigenvectors for each structure 
+##   ... dimension of x$U.subspace: ( 939x933x6 )
+##   ... coordinate superposition prior to NM calculation 
+##   ... aligned eigenvectors (gap containing positions removed)  
+##   ... estimated memory usage of final &#39;eNMA&#39; object: 40.2 Mb 
+## 
+##   |                                                                              |                                                                      |   0%  |                                                                              |============                                                          |  17%  |                                                                              |=======================                                               |  33%  |                                                                              |===================================                                   |  50%  |                                                                              |===============================================                       |  67%  |                                                                              |==========================================================            |  83%  |                                                                              |======================================================================| 100%</code></pre>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="leren-van-bio3d---structurele-eiwitanalyse.html#cb20-1" tabindex="-1"></a><span class="fu">plot</span>(modes, pdbs, <span class="at">spread=</span><span class="cn">TRUE</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+</div>
+</div>
+<div id="bronnen" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Bronnen<a href="leren-van-bio3d---structurele-eiwitanalyse.html#bronnen" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><a href="http://thegrantlab.org/bio3d_v2/tutorials/structure-analysis" class="uri">http://thegrantlab.org/bio3d_v2/tutorials/structure-analysis</a></p>
+<p>Boris A Reva, Alexei V Finkelstein, Jeffrey Skolnick. What is the probability of a chance prediction of a protein structure with an rmsd of 6 å?. Folding and Design, Volume 3, Issue 2. 1998. <a href="https://doi.org/10.1016/S1359-0278(98)00019-4" class="uri">https://doi.org/10.1016/S1359-0278(98)00019-4</a>.</p>
+<p>Carugo O, Pongor S. A normalized root-mean-square distance for comparing protein three-dimensional structures. Protein Sci. 2001 Jul;10(7):1470-3. doi: 10.1110/ps.690101. PMID: 11420449; PMCID: PMC2374114.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="plan-voor-de-toekomst.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="guerrilla-analytics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
